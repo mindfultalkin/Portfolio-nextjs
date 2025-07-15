@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
 import { ChevronDown, ChevronRight, Menu, X } from "lucide-react"
 
 const navigationItems = [
@@ -104,7 +103,7 @@ const navigationItems = [
   },
 ]
 
-export function Sidebar() {
+export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) {
   const [expandedItems, setExpandedItems] = useState<string[]>(["Knowledge Base", "Software Development Life Cycle"])
   const [isMobileOpen, setIsMobileOpen] = useState(false)
 
@@ -148,20 +147,30 @@ export function Sidebar() {
                 {expandedItems.includes(item.title) && (
                   <div className="ml-3 sm:ml-4 mt-1 sm:mt-2 space-y-1">
                     {item.children.map((child) => (
-                      <Link
+                      <button
                         key={child.href}
-                        href={child.href}
-                        className="block p-2 text-xs sm:text-sm text-[#666666] hover:text-[#0894b5] hover:bg-[#ebe8dd] rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#0894b5] focus:ring-opacity-50"
+                        onClick={() => {
+                          // Special handling for specific pages
+                          if (child.href === "/api-docs/communication-coach-bot") {
+                            onNavigate("communication-coach-bot")
+                          } else if (child.href === "/knowledge-base/zendesk") {
+                            onNavigate("knowledge-base-zendesk")
+                          } else {
+                            // Default navigation for other items (can be expanded later)
+                            onNavigate(child.href.replace("/", ""))
+                          }
+                        }}
+                        className="w-full text-left block p-2 text-xs sm:text-sm text-[#666666] hover:text-[#0894b5] hover:bg-[#ebe8dd] rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#0894b5] focus:ring-opacity-50"
                       >
                         <span className="truncate block">{child.title}</span>
-                      </Link>
+                      </button>
                     ))}
                   </div>
                 )}
               </div>
             ) : (
-              <Link
-                href={item.href || "#"}
+              <button
+                onClick={() => onNavigate(item.href?.replace("/", "") || "home")}
                 className={`block p-2 sm:p-3 text-sm sm:text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${
                   item.active
                     ? "bg-[#0894b5] text-[#fffcf3] shadow-md focus:ring-[#fffcf3]"
@@ -169,7 +178,7 @@ export function Sidebar() {
                 }`}
               >
                 <span className="truncate block">{item.title}</span>
-              </Link>
+              </button>
             )}
           </div>
         ))}
