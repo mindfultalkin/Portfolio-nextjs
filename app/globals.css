@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.pdf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: white;
+}
+
 :root {
   --primary-blue: #0894b5;
   --accent-orange: #f48d03;

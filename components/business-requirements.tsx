@@ -1,23 +1,92 @@
 "use client"
 
-import { useState, useCallback } from "react"
+import { useState, useCallback, useEffect, useRef } from "react"
 import { Download, ZoomIn, ZoomOut, ExternalLink, FileText, Maximize2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import * as pdfjsLib from "pdfjs-dist"
+import "pdfjs-dist/web/pdf_viewer.css"
+
+// Initialize PDF.js worker
+if (typeof window !== 'undefined') {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+}
 
 export function BusinessRequirements() {
   const [scale, setScale] = useState<number>(100)
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false)
   const [loading, setLoading] = useState<boolean>(true)
   const [error, setError] = useState<string | null>(null)
+  const [pdfDoc, setPdfDoc] = useState<any>(null)
+  const [numPages, setNumPages] = useState<number>(0)
+  const pdfContainerRef = useRef<HTMLDivElement>(null)
+  const pagesRef = useRef<HTMLCanvasElement[]>([])
 
   const zoomIn = () => setScale((prev) => Math.min(prev + 10, 200))
   const zoomOut = () => setScale((prev) => Math.max(prev - 10, 50))
 
-  const handlePdfLoad = useCallback(() => {
-    setLoading(false)
-    setError(null)
+  const renderPage = useCallback(async (pageNum: number) => {
+    if (!pdfDoc) return
+
+    const page = await pdfDoc.getPage(pageNum)
+    const viewport = page.getViewport({ scale: scale / 100 })
+    
+    const canvas = pagesRef.current[pageNum - 1] || document.createElement('canvas')
+    const context = canvas.getContext('2d')
+    
+    canvas.height = viewport.height
+    canvas.width = viewport.width
+    canvas.style.margin = '20px auto'
+    canvas.style.display = 'block'
+
+    await page.render({
+      canvasContext: context,
+      viewport: viewport
+    }).promise
+
+    if (!pagesRef.current[pageNum - 1]) {
+      pagesRef.current[pageNum - 1] = canvas
+      pdfContainerRef.current?.appendChild(canvas)
+    }
+  }, [pdfDoc, scale])
+
+  const loadPDF = useCallback(async () => {
+    try {
+      const loadingTask = pdfjsLib.getDocument('/software-development-life-cycle/business-requirements.pdf')
+      const pdf = await loadingTask.promise
+      setPdfDoc(pdf)
+      setNumPages(pdf.numPages)
+      setLoading(false)
+      setError(null)
+    } catch (err) {
+      setLoading(false)
+      setError("Failed to load PDF document. Please try downloading the file directly.")
+    }
   }, [])
+
+  // Initial PDF load
+  useEffect(() => {
+    loadPDF()
+  }, [loadPDF])
+
+  // Render pages when PDF is loaded or scale changes
+  useEffect(() => {
+    if (!pdfDoc || !pdfContainerRef.current) return
+
+    // Clear existing canvases when scale changes
+    if (scale !== 100) {
+      pdfContainerRef.current.innerHTML = ''
+      pagesRef.current = []
+    }
+
+    const renderPages = async () => {
+      for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+        await renderPage(pageNum)
+      }
+    }
+
+    renderPages()
+  }, [pdfDoc, numPages, scale, renderPage])
 
   const handlePdfError = useCallback(() => {
     setLoading(false)
@@ -218,22 +287,21 @@ export function BusinessRequirements() {
               </div>
             )}
 
-            <div className="h-full w-full overflow-auto">
-              <div className="flex justify-center">
-                <iframe
-                  src="/software-development-life-cycle/business-requirements.pdf#toolbar=1&navpanes=1&scrollbar=1"
-                  className="border-0 shadow-lg rounded"
-                  style={{
-                    width: `${scale}%`,
-                    minWidth: "800px",
-                    height: isFullscreen ? "calc(100vh - 200px)" : "800px",
-                    minHeight: "600px",
-                  }}
-                  title="Business Requirements Document"
-                  onLoad={handlePdfLoad}
-                  onError={handlePdfError}
-                />
-              </div>
+            <div 
+              className="h-full w-full overflow-auto flex justify-center"
+              style={{
+                height: isFullscreen ? "calc(100vh - 200px)" : "800px",
+                minHeight: "600px",
+              }}
+            >
+              <div 
+                id="pdfContainer"
+                className="pdf-container border-0 shadow-lg rounded bg-white"
+                style={{
+                  width: `${scale}%`,
+                  minWidth: "800px",
+                }}
+              />
             </div>
           </div>
 
