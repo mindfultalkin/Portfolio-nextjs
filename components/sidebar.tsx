@@ -155,6 +155,14 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
                             onNavigate("communication-coach-bot")
                           } else if (child.href === "/knowledge-base/zendesk") {
                             onNavigate("knowledge-base-zendesk")
+                          } else if (child.href === "/knowledge-base/document360") {
+                            onNavigate("knowledge-base-document360")                          
+                          } else if (child.href === "/knowledge-base/docusaurus") {
+                            onNavigate("knowledge-base-docusaurus")
+                          } else if (child.href === "/knowledge-base/zendesk-walkthrough") {
+                            onNavigate("knowledge-base-zendesk-walkthrough")
+                          } else if (child.href === "/sdlc/business-requirements") {
+                            onNavigate("business-requirements")
                           } else {
                             // Default navigation for other items (can be expanded later)
                             onNavigate(child.href.replace("/", ""))
@@ -171,11 +179,10 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
             ) : (
               <button
                 onClick={() => onNavigate(item.href?.replace("/", "") || "home")}
-                className={`block p-2 sm:p-3 text-sm sm:text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${
-                  item.active
+                className={`block p-2 sm:p-3 text-sm sm:text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${item.active
                     ? "bg-[#0894b5] text-[#fffcf3] shadow-md focus:ring-[#fffcf3]"
                     : "text-[#2c2c2c] hover:bg-[#ebe8dd] focus:ring-[#0894b5]"
-                }`}
+                  }`}
               >
                 <span className="truncate block">{item.title}</span>
               </button>
