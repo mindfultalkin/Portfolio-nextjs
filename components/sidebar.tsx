@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { ChevronDown, ChevronRight, Menu, X } from "lucide-react"
+import { useState, useCallback, useMemo } from "react"
+import { ChevronDown, ChevronRight, Menu, X, Home } from "lucide-react"
 
 const navigationItems = [
   {
@@ -107,90 +107,122 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
   const [expandedItems, setExpandedItems] = useState<string[]>(["Knowledge Base", "Software Development Life Cycle"])
   const [isMobileOpen, setIsMobileOpen] = useState(false)
 
-  const toggleExpanded = (title: string) => {
+  const toggleExpanded = useCallback((title: string) => {
     setExpandedItems((prev) => (prev.includes(title) ? prev.filter((item) => item !== title) : [...prev, title]))
-  }
+  }, [])
 
-  const SidebarContent = () => (
-    <div className="h-full bg-[#f0ede3] border-r border-[#e8e5db] shadow-lg">
-      <div className="p-4 sm:p-6 border-b border-[#e8e5db]">
-        <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#0894b5] rounded-lg flex items-center justify-center shadow-md">
-            <span className="text-[#fffcf3] font-bold text-sm sm:text-base">MT</span>
-          </div>
-          <div className="min-w-0 flex-1">
-            <h1 className="text-[#2c2c2c] font-bold text-base sm:text-lg truncate">MindfulTalk.in</h1>
-            <p className="text-[#666666] text-xs sm:text-sm truncate">Communication Excellence</p>
-          </div>
+  const handleNavigation = useCallback(
+    (href: string) => {
+      // Special handling for specific pages
+      if (href === "/api-docs/communication-coach-bot") {
+        onNavigate("communication-coach-bot")
+      } else if (href === "/knowledge-base/zendesk") {
+        onNavigate("knowledge-base-zendesk")
+      } else if (href === "/knowledge-base/document360") {
+        onNavigate("knowledge-base-document360")
+      } else if (href === "/knowledge-base/docusaurus") {
+        onNavigate("knowledge-base-docusaurus")
+      } else if (href === "/knowledge-base/zendesk-walkthrough") {
+        onNavigate("knowledge-base-zendesk-walkthrough")
+      } else if (href === "/sdlc/business-requirements") {
+        onNavigate("business-requirements")
+      } else {
+        // Default navigation for other items (can be expanded later)
+        onNavigate(href.replace("/", ""))
+      }
+      setIsMobileOpen(false) // Close mobile menu after navigation
+    },
+    [onNavigate],
+  )
+
+  const SidebarContent = useMemo(
+    () => () => (
+      <div className="h-full bg-[#f0ede3] border-r border-[#e8e5db] shadow-lg">
+        <div className="p-4 sm:p-6 border-b border-[#e8e5db]">
+          <button
+            onClick={() => onNavigate("home")}
+            className="flex items-center space-x-3 w-full hover:bg-[#ebe8dd] rounded-lg p-2 transition-colors duration-200"
+          >
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#0894b5] rounded-lg flex items-center justify-center shadow-md">
+              <span className="text-[#fffcf3] font-bold text-sm sm:text-base">MT</span>
+            </div>
+            <div className="min-w-0 flex-1 text-left">
+              <h1 className="text-[#2c2c2c] font-bold text-base sm:text-lg truncate">MindfulTalk.in</h1>
+              <p className="text-[#666666] text-xs sm:text-sm truncate">Communication Excellence</p>
+            </div>
+          </button>
         </div>
-      </div>
 
-      <nav
-        className="p-3 sm:p-4 space-y-1 sm:space-y-2 overflow-y-auto scrollbar-hide"
-        style={{ maxHeight: "calc(100vh - 120px)" }}
-      >
-        {navigationItems.map((item) => (
-          <div key={item.title}>
-            {item.children ? (
-              <div>
-                <button
-                  onClick={() => toggleExpanded(item.title)}
-                  className="w-full flex items-center justify-between p-2 sm:p-3 text-left text-[#2c2c2c] hover:bg-[#ebe8dd] rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#0894b5] focus:ring-opacity-50"
-                >
-                  <span className="text-sm sm:text-base font-medium truncate">{item.title}</span>
-                  {expandedItems.includes(item.title) ? (
-                    <ChevronDown className="w-4 h-4 text-[#666666] flex-shrink-0" />
-                  ) : (
-                    <ChevronRight className="w-4 h-4 text-[#666666] flex-shrink-0" />
+        <nav
+          className="p-3 sm:p-4 space-y-1 sm:space-y-2 overflow-y-auto scrollbar-hide"
+          style={{ maxHeight: "calc(100vh - 120px)" }}
+          role="navigation"
+          aria-label="Main navigation"
+        >
+          {/* Home Button */}
+          <button
+            onClick={() => onNavigate("home")}
+            className="w-full flex items-center space-x-3 p-2 sm:p-3 text-left text-[#2c2c2c] hover:bg-[#ebe8dd] rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#0894b5] focus:ring-opacity-50"
+            aria-label="Go to home page"
+          >
+            <Home className="w-4 h-4 text-[#666666] flex-shrink-0" />
+            <span className="text-sm sm:text-base font-medium">Home</span>
+          </button>
+
+          {navigationItems.map((item) => (
+            <div key={item.title}>
+              {item.children ? (
+                <div>
+                  <button
+                    onClick={() => toggleExpanded(item.title)}
+                    className="w-full flex items-center justify-between p-2 sm:p-3 text-left text-[#2c2c2c] hover:bg-[#ebe8dd] rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#0894b5] focus:ring-opacity-50"
+                    aria-expanded={expandedItems.includes(item.title)}
+                    aria-controls={`submenu-${item.title.replace(/\s+/g, "-").toLowerCase()}`}
+                  >
+                    <span className="text-sm sm:text-base font-medium truncate">{item.title}</span>
+                    {expandedItems.includes(item.title) ? (
+                      <ChevronDown className="w-4 h-4 text-[#666666] flex-shrink-0" />
+                    ) : (
+                      <ChevronRight className="w-4 h-4 text-[#666666] flex-shrink-0" />
+                    )}
+                  </button>
+                  {expandedItems.includes(item.title) && (
+                    <div
+                      className="ml-3 sm:ml-4 mt-1 sm:mt-2 space-y-1"
+                      id={`submenu-${item.title.replace(/\s+/g, "-").toLowerCase()}`}
+                      role="menu"
+                    >
+                      {item.children.map((child) => (
+                        <button
+                          key={child.href}
+                          onClick={() => handleNavigation(child.href)}
+                          className="w-full text-left block p-2 text-xs sm:text-sm text-[#666666] hover:text-[#0894b5] hover:bg-[#ebe8dd] rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#0894b5] focus:ring-opacity-50"
+                          role="menuitem"
+                        >
+                          <span className="truncate block">{child.title}</span>
+                        </button>
+                      ))}
+                    </div>
                   )}
-                </button>
-                {expandedItems.includes(item.title) && (
-                  <div className="ml-3 sm:ml-4 mt-1 sm:mt-2 space-y-1">
-                    {item.children.map((child) => (
-                      <button
-                        key={child.href}
-                        onClick={() => {
-                          // Special handling for specific pages
-                          if (child.href === "/api-docs/communication-coach-bot") {
-                            onNavigate("communication-coach-bot")
-                          } else if (child.href === "/knowledge-base/zendesk") {
-                            onNavigate("knowledge-base-zendesk")
-                          } else if (child.href === "/knowledge-base/document360") {
-                            onNavigate("knowledge-base-document360")                          
-                          } else if (child.href === "/knowledge-base/docusaurus") {
-                            onNavigate("knowledge-base-docusaurus")
-                          } else if (child.href === "/knowledge-base/zendesk-walkthrough") {
-                            onNavigate("knowledge-base-zendesk-walkthrough")
-                          } else if (child.href === "/sdlc/business-requirements") {
-                            onNavigate("business-requirements")
-                          } else {
-                            // Default navigation for other items (can be expanded later)
-                            onNavigate(child.href.replace("/", ""))
-                          }
-                        }}
-                        className="w-full text-left block p-2 text-xs sm:text-sm text-[#666666] hover:text-[#0894b5] hover:bg-[#ebe8dd] rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#0894b5] focus:ring-opacity-50"
-                      >
-                        <span className="truncate block">{child.title}</span>
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ) : (
-              <button
-                onClick={() => onNavigate(item.href?.replace("/", "") || "home")}
-                className={`block p-2 sm:p-3 text-sm sm:text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${item.active
-                    ? "bg-[#0894b5] text-[#fffcf3] shadow-md focus:ring-[#fffcf3]"
-                    : "text-[#2c2c2c] hover:bg-[#ebe8dd] focus:ring-[#0894b5]"
+                </div>
+              ) : (
+                <button
+                  onClick={() => handleNavigation(item.href || "#")}
+                  className={`block p-2 sm:p-3 text-sm sm:text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${
+                    item.active
+                      ? "bg-[#0894b5] text-[#fffcf3] shadow-md focus:ring-[#fffcf3]"
+                      : "text-[#2c2c2c] hover:bg-[#ebe8dd] focus:ring-[#0894b5]"
                   }`}
-              >
-                <span className="truncate block">{item.title}</span>
-              </button>
-            )}
-          </div>
-        ))}
-      </nav>
-    </div>
+                >
+                  <span className="truncate block">{item.title}</span>
+                </button>
+              )}
+            </div>
+          ))}
+        </nav>
+      </div>
+    ),
+    [expandedItems, handleNavigation, onNavigate],
   )
 
   return (

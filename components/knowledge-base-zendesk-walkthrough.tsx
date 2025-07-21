@@ -30,7 +30,7 @@ export function KnowledgeBaseZendeskWalkthrough() {
       <div className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto">
           <video
-            src="/knowledge-base-video/secuvy-portal-walkthrough.mp4"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_2zIrsZhM9jGu4gDLJ7CxcX4H9Tzs/XTOb1Hf4ddg_YvYfBJX43q/public/knowledge-base-video/secuvy-portal-walkthrough.mp4"
             controls
             className="w-full h-auto rounded-xl border border-[#e8e5db] shadow-sm"
           >
