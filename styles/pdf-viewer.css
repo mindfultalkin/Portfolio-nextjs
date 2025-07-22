@@ -1,0 +1,23 @@
+.pdf-viewer {
+  @apply relative w-full h-full min-h-[500px] bg-white rounded-lg shadow-lg;
+}
+
+.pdf-loading {
+  @apply absolute inset-0 flex items-center justify-center;
+}
+
+.pdf-container {
+  @apply w-full h-full overflow-auto;
+}
+
+.pdf-page-wrapper {
+  @apply relative mx-auto mb-8;
+}
+
+.pdf-page-canvas {
+  @apply shadow-lg;
+}
+
+.page-number {
+  @apply absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm;
+}
