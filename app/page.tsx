@@ -9,8 +9,11 @@ const CommunicationCoachBot = lazy(() =>
   import("@/components/communication-coach-bot").then((module) => ({ default: module.CommunicationCoachBot })),
 )
 const KnowledgeBaseZendesk = lazy(() =>
-  import("@/components/knowledge-base-zendesk").then((module) => ({ default: module.KnowledgeBaseZendesk })),
+  import("@/components/secuvy").then((module) => ({ default: module.Secuvy })),
 )
+// const KnowledgeBaseZendesk = lazy(() =>
+//   import("@/components/knowledge-base-zendesk").then((module) => ({ default: module.KnowledgeBaseZendesk })),
+// )
 const KnowledgeBaseDocument360 = lazy(() =>
   import("@/components/knowledge-base-document360").then((module) => ({ default: module.KnowledgeBaseDocument360 })),
 )
@@ -49,12 +52,19 @@ export default function Home() {
             <CommunicationCoachBot />
           </Suspense>
         )
-      case "knowledge-base-zendesk":
+      case "secuvy":
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <KnowledgeBaseZendesk />
           </Suspense>
         )
+        
+      // case "knowledge-base-zendesk":
+      //   return (
+      //     <Suspense fallback={<LoadingSpinner />}>
+      //       <KnowledgeBaseZendesk />
+      //     </Suspense>
+      //   )
       case "knowledge-base-document360":
         return (
           <Suspense fallback={<LoadingSpinner />}>

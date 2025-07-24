@@ -7,7 +7,7 @@ const navigationItems = [
   {
     title: "Knowledge Base",
     children: [
-      { title: "Knowledge Base using Zendesk", href: "/knowledge-base/zendesk" },
+      { title: "Knowledge Base using Zendesk", href: "/knowledge-base/secuvy" },
       { title: "Knowledge Base using Document360", href: "/knowledge-base/document360" },
       { title: "Knowledge Base using Docusaurus", href: "/knowledge-base/docusaurus" },
       { title: "Video Walkthrough of Zendesk Knowledge Base", href: "/knowledge-base/zendesk-walkthrough" },
@@ -116,8 +116,8 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
       // Special handling for specific pages
       if (href === "/api-docs/communication-coach-bot") {
         onNavigate("communication-coach-bot")
-      } else if (href === "/knowledge-base/zendesk") {
-        onNavigate("knowledge-base-zendesk")
+      } else if (href === "/knowledge-base/secuvy") {
+        onNavigate("secuvy")
       } else if (href === "/knowledge-base/document360") {
         onNavigate("knowledge-base-document360")
       } else if (href === "/knowledge-base/docusaurus") {

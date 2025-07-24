@@ -1,47 +1,72 @@
 "use client"
 
 import { useEffect, useRef, useState } from 'react'
-import type * as PDFJS from 'pdfjs-dist'
+import dynamic from 'next/dynamic'
 
 interface PDFViewerProps {
   url: string
   scale: number
 }
 
+// Dynamically import PDF.js to avoid SSR issues
+const loadPdfJs = async () => {
+  const pdfjs = await import('pdfjs-dist')
+  const worker = await import('pdfjs-dist/build/pdf.worker.entry')
+  pdfjs.GlobalWorkerOptions.workerSrc = worker.default
+  return pdfjs
+}
+
 export function PDFViewer({ url, scale }: PDFViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [pdfjsLib, setPdfjsLib] = useState<typeof PDFJS | null>(null)
+  const [pdfjsLib, setPdfjsLib] = useState<any>(null)
 
   useEffect(() => {
-    async function loadPDFJS() {
+    let mounted = true
+
+    const initPdfJs = async () => {
       try {
-        const pdfjs = await import('pdfjs-dist')
-        pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
-        setPdfjsLib(pdfjs)
+        const pdfjs = await loadPdfJs()
+        if (mounted) {
+          setPdfjsLib(pdfjs)
+        }
       } catch (err) {
         console.error('Error loading PDF.js:', err)
-        setError('Failed to initialize PDF viewer')
+        if (mounted) {
+          setError('Failed to initialize PDF viewer')
+        }
       }
     }
-    loadPDFJS()
+
+    initPdfJs()
+    return () => { mounted = false }
   }, [])
 
   useEffect(() => {
     if (!pdfjsLib || !containerRef.current) return
 
     async function renderPDF() {
+      const container = containerRef.current
+      if (!container) return
+
       try {
         setLoading(true)
         const loadingTask = pdfjsLib.getDocument(url)
         const pdf = await loadingTask.promise
 
-        containerRef.current.innerHTML = ''
+        container.innerHTML = ''
 
         for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
           const page = await pdf.getPage(pageNum)
-          const viewport = page.getViewport({ scale: scale / 100 })
+          const originalViewport = page.getViewport({ scale: 1.0 })
+          
+          // Calculate scale to fit the page width (with some margin)
+          const containerWidth = container.clientWidth - 64 // 32px padding on each side
+          const fitScale = containerWidth / originalViewport.width
+          const finalScale = (scale / 100) * fitScale
+
+          const viewport = page.getViewport({ scale: finalScale })
 
           const wrapper = document.createElement('div')
           wrapper.className = 'pdf-page-wrapper'
@@ -65,7 +90,7 @@ export function PDFViewer({ url, scale }: PDFViewerProps) {
           pageNumber.textContent = `Page ${pageNum}`
           wrapper.appendChild(pageNumber)
 
-          containerRef.current.appendChild(wrapper)
+          container.appendChild(wrapper)
 
           await page.render({
             canvasContext: context,

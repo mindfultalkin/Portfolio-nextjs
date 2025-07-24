@@ -15,13 +15,13 @@ export function KnowledgeBaseZendesk() {
   return (
     <div className="min-h-screen bg-[#fffcf3] text-[#2c2c2c]">
       {/* Header Section */}
-      <div className="relative overflow-hidden border-b border-[#e8e5db]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0894b5]/5 to-[#f48d03]/5" />
+      <div className="relative overflow-hidden border-[#e8e5db]">
+        <div className="absolute inset-0 from-[#0894b5]/5 to-[#f48d03]/5" />
         <div className="relative px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <div className="max-w-4xl mx-auto">
             <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-[#0894b5]/15 border border-[#0894b5]/20 rounded-full text-[#0894b5] text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               <BookOpen className="w-4 h-4 mr-2" />
-              <span>Knowledge Base</span>
+              <span>Knowledge Base</span>a
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
               Secuvy.ai Help Center Documentation
@@ -34,7 +34,7 @@ export function KnowledgeBaseZendesk() {
       </div>
 
       {/* Overview Matrix Section */}
-      <section id="doc-matrix" className="px-4 sm:px-6 lg:px-8 py-12 bg-[#f5f2e8]">
+      <section id="doc-matrix" className="px-4 sm:px-6 lg:px-8 py-12 border-[#e8e5db]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Matrix</h2>
           <div className="overflow-x-auto">
