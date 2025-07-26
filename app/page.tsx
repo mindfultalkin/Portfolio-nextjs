@@ -11,19 +11,11 @@ const CommunicationCoachBot = lazy(() =>
 const KnowledgeBaseZendesk = lazy(() =>
   import("@/components/secuvy").then((module) => ({ default: module.Secuvy })),
 )
-// const KnowledgeBaseZendesk = lazy(() =>
-//   import("@/components/knowledge-base-zendesk").then((module) => ({ default: module.KnowledgeBaseZendesk })),
-// )
 const KnowledgeBaseDocument360 = lazy(() =>
-  import("@/components/knowledge-base-document360").then((module) => ({ default: module.KnowledgeBaseDocument360 })),
+  import("@/components/document360").then((module) => ({ default: module.Document360 })),
 )
 const KnowledgeBaseDocusaurus = lazy(() =>
-  import("@/components/knowledge-base-docusaurus").then((module) => ({ default: module.KnowledgeBaseDocusaurus })),
-)
-const KnowledgeBaseZendeskWalkthrough = lazy(() =>
-  import("@/components/knowledge-base-zendesk-walkthrough").then((module) => ({
-    default: module.KnowledgeBaseZendeskWalkthrough,
-  })),
+  import("@/components/docusaurus").then((module) => ({ default: module.Docusaurus })),
 )
 const BusinessRequirements = lazy(() =>
   import("@/components/business-requirements").then((module) => ({ default: module.BusinessRequirements })),
@@ -57,30 +49,17 @@ export default function Home() {
           <Suspense fallback={<LoadingSpinner />}>
             <KnowledgeBaseZendesk />
           </Suspense>
-        )
-        
-      // case "knowledge-base-zendesk":
-      //   return (
-      //     <Suspense fallback={<LoadingSpinner />}>
-      //       <KnowledgeBaseZendesk />
-      //     </Suspense>
-      //   )
-      case "knowledge-base-document360":
+        )        
+      case "document360":
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <KnowledgeBaseDocument360 />
           </Suspense>
         )
-      case "knowledge-base-docusaurus":
+      case "docusaurus":
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <KnowledgeBaseDocusaurus />
-          </Suspense>
-        )
-      case "knowledge-base-zendesk-walkthrough":
-        return (
-          <Suspense fallback={<LoadingSpinner />}>
-            <KnowledgeBaseZendeskWalkthrough />
           </Suspense>
         )
       case "business-requirements":
