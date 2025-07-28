@@ -20,6 +20,9 @@ const KnowledgeBaseDocusaurus = lazy(() =>
 const BusinessRequirements = lazy(() =>
   import("@/components/business-requirements").then((module) => ({ default: module.BusinessRequirements })),
 )
+const PDFDemo = lazy(() =>
+  import("@/app/content-pdf-demo/page").then((module) => ({ default: module.default })),
+)
 
 // Loading component
 function LoadingSpinner() {
@@ -66,6 +69,12 @@ export default function Home() {
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <BusinessRequirements />
+          </Suspense>
+        )
+      case "pdf-demo":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <PDFDemo />
           </Suspense>
         )
       default:

@@ -1,73 +1,123 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { Download, ZoomIn, ZoomOut, ExternalLink, Maximize2 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge' 
-import dynamic from 'next/dynamic'
-
-const PDFViewer = dynamic(
-  () => import('@/components/pdf-viewer').then(mod => mod.PDFViewer),
-  { ssr: false }
-)
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
+import { PDFViewer } from "@/components/pdf-viewer"
 
 export function BusinessRequirements() {
-  const [scale, setScale] = useState<number>(100)
-  const [isFullscreen, setIsFullscreen] = useState<boolean>(false)
-  const pdfUrl = '/software-development-life-cycle/business-requirements.pdf'
-
-  const zoomIn = () => setScale(prev => Math.min(prev + 10, 200))
-  const zoomOut = () => setScale(prev => Math.max(prev - 10, 50))
-  const toggleFullscreen = () => setIsFullscreen(!isFullscreen)
-
-  const handleDownload = () => {
-    const link = document.createElement('a')
-    link.href = pdfUrl
-    link.download = 'business-requirements.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+  const workflowSteps = [
+    "Planning & Strategy",
+    "Content Creation",
+    "Technical Review",
+    "Editorial Review",
+    "Publishing & QA"
+  ]
 
   return (
-    <div className={`min-h-screen flex flex-col ${isFullscreen ? "fixed inset-0 z-50" : ""}`}>
-      {/* Introduction Section */}
-      <div className="relative overflow-hidden border-b border-[#e8e5db]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0894b5]/5 to-[#f48d03]/5" />
-        <div className="relative px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-6">
-              <span className="text-[#f48d03] text-xs sm:text-sm font-semibold uppercase tracking-wide">
-                Introduction
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold mt-2 mb-4 text-[#2c2c2c]">
-                Document Creation Approach
-              </h2>
-            </div>
-            <div className="prose prose-lg max-w-none">
-              <p className="text-[#666666] mb-4">
-                SaaSmile [doos.me] is one of the leading logistics companies in Saudi Arabia, offering complete end-to-end logistics and supply chain solutions to both businesses and individual shoppers business-requirements. To integrate seamlessly with eCommerce platforms, merchants require a dedicated plugin that enables them to book shipments, generate airway bills (AWBs), track deliveries, and manage finance workflows directly from their store interface business-requirements.
-                This document has been developed following a structured business-requirements approach to ensure clarity, traceability, and alignment with stakeholder needs:
+    <div className="min-h-screen bg-[#fffcf3] text-[#2c2c2c]">
+      <div className="px-4 sm:px-6 lg:px-8 py-6">
+        <div className="max-w-6xl mx-auto space-y-8">
+          {/* Hero Section */}
+          <div className="text-center space-y-6">
+            <div className="space-y-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
+              Business Requirements
+              </h1>
+              <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
+                Zendesk | 60+ articles | 12 weeks
+              </Badge>
+              <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
+                We built a complete self-service portal for Secuvy from the ground up. The key highlights are:
               </p>
-              <p className="text-[#666666] mb-4">The system emphasizes clarity through:</p>
-              <ul className="list-disc list-inside text-[#666666] mb-4">
-                <li>Clean visual hierarchy</li>
-                <li>Guided navigation</li>
-                <li>Real-world use cases</li>
-                <li>Terminology support</li>
+              <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
+                <li>60+ detailed, user-friendly help articles</li>
+                <li>Optimized for search with keyword strategy and metadata</li>
+                <li>Customized Zendesk interface with collapsible sections and tabbed views</li>
+                <li>Delivered in 12 weeks, from planning to publishings</li>
               </ul>
-              <p className="text-[#666666]">
-                Each section is purposefully built to align with a user’s learning curve—from introductory content to
-                technical configuration and operational flows—ensuring complete user enablement.
-              </p>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="flex-1 relative bg-[#f8f9fa]">
-        <div className="absolute inset-0">
-          <PDFViewer url={pdfUrl} scale={scale} />
+          {/* Documentation Workflow Section */}
+          <Card className="bg-[#f5f2e8] border-[#e8e5db]">
+            <CardHeader>
+              <CardTitle className="text-2xl text-[#0894b5]">
+                Matrix
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
+                Here's a visual guide to our end-to-end documentation process and outcomes as we turned the product complexity into clarity.
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-[#0894b5] text-white">
+                      <th className="p-3 text-left border border-[#e8e5db]">Stage</th>
+                      <th className="p-3 text-left border border-[#e8e5db]">Topic Area</th>
+                      <th className="p-3 text-left border border-[#e8e5db]">Key Outputs</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="bg-transparent">
+                      <td className="p-3 border border-[#e8e5db] font-semibold">Overview</td>
+                      <td className="p-3 border border-[#e8e5db]">Product Overview</td>
+                      <td className="p-3 border border-[#e8e5db]">Summary of Secuvy.ai platform, features, modules, and compliance benefits.</td>
+                    </tr>
+                    <tr className="bg-transparent">
+                      <td className="p-3 border border-[#e8e5db] font-semibold">Getting Started</td>
+                      <td className="p-3 border border-[#e8e5db]">Setup & Initialization</td>
+                      <td className="p-3 border border-[#e8e5db]">Steps to onboard and configure platform features and modules.</td>
+                    </tr>
+                    <tr className="bg-transparent">
+                      <td className="p-3 border border-[#e8e5db] font-semibold">Legal Requests</td>
+                      <td className="p-3 border border-[#e8e5db]">Subject Access Requests (SARs)</td>
+                      <td className="p-3 border border-[#e8e5db]">SAR settings for GDPR/CCPA, email templates, expiry rules, verification steps, and automation.</td>
+                    </tr>
+                    <tr className="bg-transparent">
+                      <td className="p-3 border border-[#e8e5db] font-semibold">Workflows</td>
+                      <td className="p-3 border border-[#e8e5db]">SAR Workflow Diagram</td>
+                      <td className="p-3 border border-[#e8e5db]">End-to-end request flow: submit, confirm, verify, approve/deny, or request more documentation.</td>
+                    </tr>
+                    <tr className="bg-transparent">
+                      <td className="p-3 border border-[#e8e5db] font-semibold">Data Discovery</td>
+                      <td className="p-3 border border-[#e8e5db]">Data Sources & Classification</td>
+                      <td className="p-3 border border-[#e8e5db]">DB connection setup, auto-scan schedules, PII query definitions, and classification types.</td>
+                    </tr>
+                    <tr className="bg-transparent">
+                      <td className="p-3 border border-[#e8e5db] font-semibold">Lifecycle Tracking</td>
+                      <td className="p-3 border border-[#e8e5db]">DSAR Process Flow</td>
+                      <td className="p-3 border border-[#e8e5db]">Configuration, request intake, approval assignments, report generation, monitoring, and audit trail.</td>
+                    </tr>
+                    <tr className="bg-transparent">
+                      <td className="p-3 border border-[#e8e5db] font-semibold">Data Management</td>
+                      <td className="p-3 border border-[#e8e5db]">Reclassifying Data</td>
+                      <td className="p-3 border border-[#e8e5db]">How to update classification, sensitivity, and tagging via UI dropdown; AI learns from updates.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
+                Our documentation workflow followed a structured set of steps and activities - from planning, content creation, review, and publishing. This ensured consistent quality across the 60+ articles.
+              </p>
+            </CardContent>
+            <CardHeader>
+              <CardTitle className="text-2xl text-[#0894b5]">
+                Business Requirements
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="relative h-[800px] w-full">
+                <PDFViewer
+                  url="/software-development-life-cycle/business-requirements.pdf"
+                  scale={100}
+                  showControls={true}
+                  enableDownload={true}
+                />
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

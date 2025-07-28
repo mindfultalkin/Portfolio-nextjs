@@ -118,6 +118,10 @@ export function Secuvy() {
                                     <li>Draw the attention of the user to all key features/insights available to them</li>
                                 </ul>
                             </div>
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Help Center Landing Page</h3>
+                                <p>The Secuvy product had two kinds of users - Chief Information Security Officers and the Information Security Architects. The landing page was simple and clear to show two different paths to proceed for the end user's purpose.</p>
+                            </figcaption>
                             <Image
                                 src="/images/Secuvy/1.png"
                                 width={800}
@@ -125,6 +129,10 @@ export function Secuvy() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Knowledge Base Navigation and Accessibility</h3>
+                                <p>The knowledgebase features a side menu with a full table of contents, allowing users to quickly navigate through topics organized into two levels of sub-categories.</p>
+                            </figcaption>
                             <Image
                                 src="/images/Secuvy/2.png"
                                 width={800}
@@ -132,6 +140,10 @@ export function Secuvy() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Content layout for increased readability and accessibility DSAR Settings Configuration</h3>
+                                <p>Using accordions while describing several parameters does not overwhelm the reader. Subsequently, an experienced user can easily choose the topic of interest to dive deeper. A mosaic of muted slate and dove-gray panels hosts three tabs bathed in cerulean blue. Sharp edges meet rounded corners in harmonious balance, conveying both the rigor of compliance and the ease of customization.</p>
+                            </figcaption>
                             <Image
                                 src="/images/Secuvy/3.png"
                                 width={800}
@@ -139,6 +151,10 @@ export function Secuvy() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Visual elements to illustrate and simplify</h3>
+                                <p>Complex workflows are simplified with flowcharts that bring clarity to the reader.</p>
+                            </figcaption>
                             <Image
                                 src="/images/Secuvy/4.png"
                                 width={800}
@@ -146,6 +162,10 @@ export function Secuvy() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Screenshots:</h3>
+                                <p>Screenshots are captured and annotated to highlight and draw the attention of the user to all key features/insights in the screen.</p>
+                            </figcaption>
                             <Image
                                 src="/images/Secuvy/5.png"
                                 width={800}
@@ -153,8 +173,23 @@ export function Secuvy() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Explainer or Concept Notes</h3>
+                                <p>Screenshots are captured and annotated to highlight and draw the attention of the user to all key features/insights in the screen.</p>
+                            </figcaption>
                             <Image
-                                src="/images/Secuvy/6.png" 
+                                src="/images/Secuvy/6.png"
+                                width={800}
+                                height={600}
+                                alt="Snapshot 1"
+                                className="w-full h-auto rounded-lg shadow-lg"
+                            />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Explainer or Concept Notes</h3>
+                                <p>Domain specific information augments how-to articles. This enhances the usage of the product and helps educate readers about the subject before showing how to proceed with it in the product.</p>
+                            </figcaption>
+                            <Image
+                                src="/images/Secuvy/7.png"
                                 width={800}
                                 height={600}
                                 alt="Snapshot 1"
@@ -170,9 +205,9 @@ export function Secuvy() {
                                         controls
                                         className="w-full h-full rounded-lg"
                                     >
-                                        </video>
+                                    </video>
                                 </div>
-                            </div>                            
+                            </div>
                         </CardContent>
                     </Card>
                 </div>
