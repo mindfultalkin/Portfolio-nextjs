@@ -116,6 +116,14 @@ export function Docusaurus() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Welcome Page / Training Portal</h3>
+                                <p>Acts as the landing page and entry to the training modules.</p>
+                                <ul className="list-disc list-inside mb-2">
+                                    <li>Welcome message, “Click here to begin” CTA, links to features like SOP, Support, Simulation, etc.</li>
+                                    <li>User Action / Flow: User clicks to begin their training journey.</li>
+                                </ul>
+                            </figcaption>
                             <Image
                                 src="/docusaurus/3.png"
                                 width={800}
@@ -123,6 +131,14 @@ export function Docusaurus() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Overview of Product</h3>
+                                <p>Introduction to product structure and functionality.</p>
+                                <ul className="list-disc list-inside mb-2">
+                                    <li>Branded logo, modules like User Management, Setup, Functional Flow.</li>
+                                    <li>User Action / Flow: Choose any sub-topic to continue.</li>
+                                </ul>
+                            </figcaption>
                             <Image
                                 src="/docusaurus/4.png"
                                 width={800}
@@ -130,6 +146,14 @@ export function Docusaurus() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Glossary</h3>
+                                <p>Provides definitions for pharmaceutical and platform terms.</p>
+                                <ul className="list-disc list-inside mb-2">
+                                    <li>Key Elements: Alphabet filters, entries for API, FG, SFG.</li>
+                                    <li>User Action / Flow: User browses or looks up unfamiliar terms.</li>
+                                </ul>
+                            </figcaption>
                             <Image
                                 src="/docusaurus/5.png"
                                 width={800}
@@ -137,45 +161,14 @@ export function Docusaurus() {
                                 alt="Snapshot 1"
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
-                            <CardTitle className="text-2xl text-[#0894b5]">
-                                Wiki Portal
-                            </CardTitle>
-                            <p className="text-[#666666]">
-                                Microsoft SharePoint | Dynamic and Static Content | Access controlled content
-                            </p>
-                            <p className="text-[#666666]">
-                                We built a proof of concept of a Wiki portal for a medical billing company. The company dealt with large amounts of static data combined with dynamic data updates that arrived periodically...
-                            </p>
-                            <div className="space-y-2 text-[#666666]">
-                                <p>The key highlights are:</p>
-                                <ul className="list-disc list-inside">
-                                    <li>General static content accessible to all</li>
-                                    <li>Team-specific data for the same topics</li>
-                                    <li>Data access is team-based</li>
-                                    <li>Dynamic data is updated</li>
-                                    <li>Search results to show both dynamic and static content</li>
+                            <figcaption className="space-y-2 text-[#666666]">
+                                <h3 className="font-semibold">Functional Flow</h3>
+                                <p>Visual explanation of the process flow (e.g., QC or manufacturing workflow).</p>
+                                <ul className="list-disc list-inside mb-2">
+                                    <li>Flowchart diagram with decision nodes, sample testing path, re-test logic.</li>
+                                    <li>User Action / Flow: Follow visual logic for process understanding.</li>
                                 </ul>
-                            </div>
-                            <CardTitle className="text-2xl text-[#0894b5]">
-                                Snapshots:
-                            </CardTitle>
-                            <p className="text-[#666666]">
-                                comment: I will share the videos to be used here - you can put some screenshots from that
-
-                            </p>
-
-                            {/* Video Section */}
-                            {/* <div className="mt-8">
-                                <h3 className="text-xl text-[#0894b5] mb-4">Video Walkthrough</h3>
-                                <div className="aspect-video bg-black rounded-lg">
-                                    <video
-                                        src="video/secuvy-portal-walkthrough.mp4"
-                                        controls
-                                        className="w-full h-full rounded-lg"
-                                    >
-                                    </video>
-                                </div>
-                            </div> */}
+                            </figcaption>                            
                         </CardContent>
                     </Card>
                 </div>

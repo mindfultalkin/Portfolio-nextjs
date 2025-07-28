@@ -17,8 +17,17 @@ const KnowledgeBaseDocument360 = lazy(() =>
 const KnowledgeBaseDocusaurus = lazy(() =>
   import("@/components/docusaurus").then((module) => ({ default: module.Docusaurus })),
 )
+const SharePoint = lazy(() =>
+  import("@/components/share-point").then((module) => ({ default: module.SharePoint })),
+)
 const BusinessRequirements = lazy(() =>
   import("@/components/business-requirements").then((module) => ({ default: module.BusinessRequirements })),
+)
+const SystemArchitecture = lazy(() =>
+  import("@/components/system-architecture").then((module) => ({ default: module.SystemArchitecture })),
+)
+const ProductDevelopment = lazy(() =>
+  import("@/components/product-development").then((module) => ({ default: module.ProductDevelopment })),
 )
 const PDFDemo = lazy(() =>
   import("@/app/content-pdf-demo/page").then((module) => ({ default: module.default })),
@@ -65,10 +74,28 @@ export default function Home() {
             <KnowledgeBaseDocusaurus />
           </Suspense>
         )
+      case "share-point":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <SharePoint />
+          </Suspense>
+        )
       case "business-requirements":
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <BusinessRequirements />
+          </Suspense>
+        )
+      case "system-architecture":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <SystemArchitecture />
+          </Suspense>
+        )
+      case "product-development":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <ProductDevelopment />
           </Suspense>
         )
       case "pdf-demo":

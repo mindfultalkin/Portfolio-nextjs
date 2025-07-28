@@ -10,6 +10,7 @@ const navigationItems = [
       { title: "Zendesk", href: "/knowledge-base/secuvy" },
       { title: "Document360", href: "/knowledge-base/document360" },
       { title: "Docusaurus", href: "/knowledge-base/docusaurus" },
+      { title: "SharePoint", href: "/knowledge-base/share-point" },
     ],
   },
   {
@@ -121,8 +122,14 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
         onNavigate("document360")
       } else if (href === "/knowledge-base/docusaurus") {
         onNavigate("docusaurus")
+      } else if (href === "/knowledge-base/share-point") {
+        onNavigate("share-point")
       } else if (href === "/sdlc/business-requirements") {
         onNavigate("business-requirements")
+      } else if (href === "/sdlc/system-architecture") {
+        onNavigate("system-architecture")
+      } else if (href === "/sdlc/product-development") {
+        onNavigate("product-development")
       } else {
         // Default navigation for other items (can be expanded later)
         onNavigate(href.replace("/", ""))

@@ -9,7 +9,7 @@ interface PDFViewerProps {
   url: string
   scale?: number
   showControls?: boolean
-  enableDownload?: boolean
+  // enableDownload?: boolean
 }
 
 // Dynamically import PDF.js to avoid SSR issues
@@ -24,7 +24,7 @@ export function PDFViewer({
   url, 
   scale: initialScale = 100, 
   showControls = true,
-  enableDownload = true 
+  // enableDownload = true 
 }: PDFViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const canvasRefs = useRef<Map<number, HTMLCanvasElement>>(new Map())
@@ -291,7 +291,7 @@ export function PDFViewer({
               <RotateCw className="h-4 w-4" />
             </Button>
             
-            {enableDownload && (
+            {/* {enableDownload && (
               <Button
                 variant="outline"
                 size="sm"
@@ -299,7 +299,7 @@ export function PDFViewer({
               >
                 <Download className="h-4 w-4" />
               </Button>
-            )}
+            )} */}
           </div>
         </div>
       )}

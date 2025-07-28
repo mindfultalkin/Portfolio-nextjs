@@ -121,7 +121,7 @@ export function Document360() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <figcaption className="text-sm text-[#666666] mt-4">
-                                <h3 className="font-semibold mb-2">Screenshot 1: “What can you do with [REDACTED] NOW”</h3>
+                                <h3 className="font-semibold mb-2">“What can you do with [REDACTED] NOW”</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
                                 <ul className="list-disc list-inside mb-2">
                                     <li>Sets the strategic context and purpose of the platform.</li>
@@ -139,7 +139,7 @@ export function Document360() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <figcaption className="text-sm text-[#666666] mt-4">
-                                <h3 className="font-semibold mb-2">Screenshot 2: Setup Deliveries – Protocols Beyond HLS</h3>
+                                <h3 className="font-semibold mb-2">Setup Deliveries - Protocols Beyond HLS</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
                                 <ul className="list-disc list-inside mb-2">
                                     <li>Explains abstract backend concepts (protocols like SRT/Zixi).</li>
@@ -157,7 +157,7 @@ export function Document360() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <figcaption className="text-sm text-[#666666] mt-4">
-                                <h3 className="font-semibold mb-2">Screenshot 3: Change in Monetization Deal</h3>
+                                <h3 className="font-semibold mb-2">Change in Monetization Deal</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
                                 <ul className="list-disc list-inside mb-2">
                                     <li>Shows how to switch monetization deal types in response to regional or contractual changes.</li>
@@ -174,7 +174,7 @@ export function Document360() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <figcaption className="text-sm text-[#666666] mt-4">
-                                <h3 className="font-semibold mb-2">Screenshot 4</h3>
+                                <h3 className="font-semibold mb-2">Account Setup Login</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
                                 <ul className="list-disc list-inside mb-2">
                                     <li>Clearly explains initial onboarding.</li>
@@ -192,7 +192,7 @@ export function Document360() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <figcaption className="text-sm text-[#666666] mt-4">
-                                <h3 className="font-semibold mb-2">Screenshot 5: Channel Configurations & Artwork</h3>
+                                <h3 className="font-semibold mb-2">Channel Configurations & Artwork</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
                                 <ul className="list-disc list-inside mb-2">
                                     <li>Shows the Channel Configuration UI with focused screenshot.</li>
@@ -210,7 +210,7 @@ export function Document360() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <figcaption className="text-sm text-[#666666] mt-4">
-                                <h3 className="font-semibold mb-2">Screenshot 6: Direct Upload to S3</h3>
+                                <h3 className="font-semibold mb-2">Direct Upload to S3</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
                                 <ul className="list-disc list-inside mb-2">
                                     <li>Highlights real actions with visual confirmation (e.g., "Download CSV" button).</li>
@@ -227,7 +227,7 @@ export function Document360() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <figcaption className="text-sm text-[#666666] mt-4">
-                                <h3 className="font-semibold mb-2">Screenshot 7: Understanding Clocks in UI</h3>
+                                <h3 className="font-semibold mb-2">Understanding Clocks in UI</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
                                 <ul className="list-disc list-inside mb-2">
                                     <li>Details multiple timezones relevant to playout management.</li>
