@@ -29,6 +29,21 @@ const SystemArchitecture = lazy(() =>
 const ProductDevelopment = lazy(() =>
   import("@/components/product-development").then((module) => ({ default: module.ProductDevelopment })),
 )
+const GlobocastLive = lazy(() =>
+  import("@/components/globocast-live").then((module) => ({ default: module.GlobocastLive })),
+)
+const FAQsTroubleshooting = lazy(() =>
+  import("@/components/faqs-troubleshooting").then((module) => ({ default: module.FAQsTroubleshooting })),
+)
+const ProductRequirements = lazy(() =>
+  import("@/components/product-requirements").then((module) => ({ default: module.ProductRequirements })),
+)
+const UserManuals = lazy(() =>
+  import("@/components/user-manuals").then((module) => ({ default: module.UserManuals })),
+)
+const FlowOfEnglish = lazy(() =>
+  import("@/components/flow-of-english").then((module) => ({ default: module.FlowOfEnglish })),
+)
 const PDFDemo = lazy(() =>
   import("@/app/content-pdf-demo/page").then((module) => ({ default: module.default })),
 )
@@ -96,6 +111,36 @@ export default function Home() {
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <ProductDevelopment />
+          </Suspense>
+        )
+      case "globocast-live":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <GlobocastLive />
+          </Suspense>
+        )
+      case "faqs-troubleshooting":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <FAQsTroubleshooting />
+          </Suspense>
+        )
+      case "product-requirements":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <ProductRequirements />
+          </Suspense>
+        )
+      case "user-manuals":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <UserManuals />
+          </Suspense>
+        )
+      case "flow-of-english":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <FlowOfEnglish />
           </Suspense>
         )
       case "pdf-demo":

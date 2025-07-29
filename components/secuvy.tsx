@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 
+
 export function Secuvy() {
     const workflowSteps = [
         "Planning & Strategy",
@@ -104,97 +105,110 @@ export function Secuvy() {
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
-                                Snapshots: Take a tour of Secuvy's Help Center
+                                Take a tour of Secuvy's Help Center
                             </CardTitle>
                         </CardHeader>
+
                         <CardContent className="space-y-6">
                             <p className="text-[#666666]">
                                 The Secuvy product served two distinct user groups: Chief Information Security Officers (CISOs) and Information Security Architects. The knowledgebase landing page was designed with a clean, intuitive layout that clearly presented two separate user journeys, allowing each audience to navigate content relevant to their needs.
                             </p>
-                            <div className="space-y-2 text-[#666666]">
-                                <p>Screenshots are captured and annotated to:</p>
-                                <ul className="list-disc list-inside">
-                                    <li>Highlight and draw the attention of the user to all key features/insights in the screen</li>
-                                    <li>Draw the attention of the user to all key features/insights available to them</li>
-                                </ul>
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/Secuvy/1.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
                             </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Help Center Landing Page</h3>
                                 <p>The Secuvy product had two kinds of users - Chief Information Security Officers and the Information Security Architects. The landing page was simple and clear to show two different paths to proceed for the end user's purpose.</p>
                             </figcaption>
-                            <Image
-                                src="/images/Secuvy/1.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/Secuvy/2.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Knowledge Base Navigation and Accessibility</h3>
                                 <p>The knowledgebase features a side menu with a full table of contents, allowing users to quickly navigate through topics organized into two levels of sub-categories.</p>
                             </figcaption>
-                            <Image
-                                src="/images/Secuvy/2.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/Secuvy/3.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Content layout for increased readability and accessibility DSAR Settings Configuration</h3>
                                 <p>Using accordions while describing several parameters does not overwhelm the reader. Subsequently, an experienced user can easily choose the topic of interest to dive deeper. A mosaic of muted slate and dove-gray panels hosts three tabs bathed in cerulean blue. Sharp edges meet rounded corners in harmonious balance, conveying both the rigor of compliance and the ease of customization.</p>
                             </figcaption>
-                            <Image
-                                src="/images/Secuvy/3.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/Secuvy/4.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Visual elements to illustrate and simplify</h3>
                                 <p>Complex workflows are simplified with flowcharts that bring clarity to the reader.</p>
                             </figcaption>
-                            <Image
-                                src="/images/Secuvy/4.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/Secuvy/5.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Screenshots:</h3>
                                 <p>Screenshots are captured and annotated to highlight and draw the attention of the user to all key features/insights in the screen.</p>
                             </figcaption>
-                            <Image
-                                src="/images/Secuvy/5.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
-                            <figcaption className="space-y-2 text-[#666666]">
-                                <h3 className="font-semibold">Explainer or Concept Notes</h3>
-                                <p>Screenshots are captured and annotated to highlight and draw the attention of the user to all key features/insights in the screen.</p>
-                            </figcaption>
-                            <Image
-                                src="/images/Secuvy/6.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/Secuvy/6.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Explainer or Concept Notes</h3>
                                 <p>Domain specific information augments how-to articles. This enhances the usage of the product and helps educate readers about the subject before showing how to proceed with it in the product.</p>
                             </figcaption>
-                            <Image
-                                src="/images/Secuvy/7.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
 
                             {/* Video Section */}
                             <div className="mt-8">
@@ -212,6 +226,6 @@ export function Secuvy() {
                     </Card>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

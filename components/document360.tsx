@@ -113,13 +113,16 @@ export function Document360() {
                             </CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-6">
-                            <Image
-                                src="/document360/platform-journey-flow.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/document360/platform-journey-flow.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="text-sm text-[#666666] mt-4">
                                 <h3 className="font-semibold mb-2">“What can you do with [REDACTED] NOW”</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
@@ -131,13 +134,18 @@ export function Document360() {
                                 <h4 className="font-semibold">Benefit:</h4>
                                 <p>Provides a bird's-eye view with guided linear steps—ideal for new users or training.</p>
                             </figcaption>
-                            <Image
-                                src="/document360/setup-deliveries-protocols.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 2"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/document360/setup-deliveries-protocols.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 2"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="text-sm text-[#666666] mt-4">
                                 <h3 className="font-semibold mb-2">Setup Deliveries - Protocols Beyond HLS</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
@@ -149,13 +157,18 @@ export function Document360() {
                                 <h4 className="font-semibold">Benefit:</h4>
                                 <p>Bridges the gap between technical features and user understanding, especially for operations teams.</p>
                             </figcaption>
-                            <Image
-                                src="/document360/handle-monetisation-deal.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 3"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/document360/handle-monetisation-deal.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 3"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="text-sm text-[#666666] mt-4">
                                 <h3 className="font-semibold mb-2">Change in Monetization Deal</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
@@ -166,13 +179,18 @@ export function Document360() {
                                 <h4 className="font-semibold">Benefit:</h4>
                                 <p>Addresses real-world exceptions and operational agility while ensuring traceability.</p>
                             </figcaption>
-                            <Image
-                                src="/document360/account-setup-login.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 4"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/document360/account-setup-login.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 4"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="text-sm text-[#666666] mt-4">
                                 <h3 className="font-semibold mb-2">Account Setup Login</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
@@ -184,13 +202,18 @@ export function Document360() {
                                 <h4 className="font-semibold">Benefit:</h4>
                                 <p>Establishes a frictionless starting point with just enough context to act.</p>
                             </figcaption>
-                            <Image
-                                src="/document360/setup-channel-config-artwork.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 5"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/document360/setup-channel-config-artwork.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 5"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="text-sm text-[#666666] mt-4">
                                 <h3 className="font-semibold mb-2">Channel Configurations & Artwork</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
@@ -202,13 +225,18 @@ export function Document360() {
                                 <h4 className="font-semibold">Benefit:</h4>
                                 <p>Simplifies what could be a dense UI by breaking it into components and callouts.</p>
                             </figcaption>
-                            <Image
-                                src="/document360/direct-upload-s3.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 6"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/document360/direct-upload-s3.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 6"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="text-sm text-[#666666] mt-4">
                                 <h3 className="font-semibold mb-2">Direct Upload to S3</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
@@ -219,13 +247,18 @@ export function Document360() {
                                 <h4 className="font-semibold">Benefit:</h4>
                                 <p>Helps users match written steps with visual confirmations for accuracy and confidence.</p>
                             </figcaption>
-                            <Image
-                                src="/document360/ui-clocks-display.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 7"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/document360/ui-clocks-display.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 7"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="text-sm text-[#666666] mt-4">
                                 <h3 className="font-semibold mb-2">Understanding Clocks in UI</h3>
                                 <h4 className="font-semibold mb-1">Key Points:</h4>
@@ -237,6 +270,7 @@ export function Document360() {
                                 <h4 className="font-semibold">Benefit:</h4>
                                 <p>Reduces confusion around time-sensitive workflows and aligns global teams.</p>
                             </figcaption>
+                            <hr className="border-[#e8e5db] my-4" />
                         </CardContent>
                     </Card>
                 </div>

@@ -130,7 +130,7 @@ export function ProductDevelopment() {
                                     url="/software-development-life-cycle/product-development.pdf"
                                     scale={100}
                                     showControls={true}
-                                    enableDownload={true}
+                                    // enableDownload={true}
                                 />
                             </div>
                         </CardContent>

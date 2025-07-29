@@ -14,7 +14,7 @@ const navigationItems = [
     ],
   },
   {
-    title: "Software Development Life Cycle",
+    title: "SDLC",
     children: [
       { title: "Business Requirements", href: "/sdlc/business-requirements" },
       { title: "System Architecture", href: "/sdlc/system-architecture" },
@@ -130,6 +130,16 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
         onNavigate("system-architecture")
       } else if (href === "/sdlc/product-development") {
         onNavigate("product-development")
+      } else if (href === "/user-manual/globocast-live") {
+        onNavigate("globocast-live")
+      } else if (href === "/content-strategy/faqs-troubleshooting") {
+        onNavigate("faqs-troubleshooting")
+      } else if (href === "/content-strategy/product-requirements") {
+        onNavigate("product-requirements")
+      } else if (href === "/content-strategy/user-manuals") {
+        onNavigate("user-manuals")
+      } else if (href === "/product-tour/flow-of-english") {
+        onNavigate("flow-of-english")
       } else {
         // Default navigation for other items (can be expanded later)
         onNavigate(href.replace("/", ""))
@@ -147,13 +157,11 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
             onClick={() => onNavigate("home")}
             className="flex items-center space-x-3 w-full hover:bg-[#ebe8dd] rounded-lg p-2 transition-colors duration-200"
           >
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#0894b5] rounded-lg flex items-center justify-center shadow-md">
-              <span className="text-[#fffcf3] font-bold text-sm sm:text-base">MT</span>
-            </div>
-            <div className="min-w-0 flex-1 text-left">
-              <h1 className="text-[#2c2c2c] font-bold text-base sm:text-lg truncate">MindfulTalk.in</h1>
-              <p className="text-[#666666] text-xs sm:text-sm truncate">Communication Excellence</p>
-            </div>
+            <img
+              src="/mindful_logo.png"
+              alt="Portfolio Logo"
+              className="h-12 w-auto object-contain"
+            />
           </button>
         </div>
 
@@ -212,11 +220,10 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
               ) : (
                 <button
                   onClick={() => handleNavigation(item.href || "#")}
-                  className={`block p-2 sm:p-3 text-sm sm:text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${
-                    item.active
+                  className={`block p-2 sm:p-3 text-sm sm:text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${item.active
                       ? "bg-[#0894b5] text-[#fffcf3] shadow-md focus:ring-[#fffcf3]"
                       : "text-[#2c2c2c] hover:bg-[#ebe8dd] focus:ring-[#0894b5]"
-                  }`}
+                    }`}
                 >
                   <span className="truncate block">{item.title}</span>
                 </button>

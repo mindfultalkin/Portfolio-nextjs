@@ -88,9 +88,6 @@ export function Docusaurus() {
                                     </tbody>
                                 </table>
                             </div>
-                            {/* <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
-                                Our documentation workflow followed a structured set of steps and activities - from planning, content creation, review, and publishing. This ensured consistent quality across the 60+ articles.
-                            </p> */}
                         </CardContent>
 
                         <CardHeader>
@@ -99,23 +96,16 @@ export function Docusaurus() {
                             </CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-6">
-                            {/* <p className="text-[#666666]">
-                                The Secuvy product served two distinct user groups: Chief Information Security Officers (CISOs) and Information Security Architects. The knowledgebase landing page was designed with a clean, intuitive layout that clearly presented two separate user journeys, allowing each audience to navigate content relevant to their needs.
-                            </p>
-                            <div className="space-y-2 text-[#666666]">
-                                <p>Screenshots are captured and annotated to:</p>
-                                <ul className="list-disc list-inside">
-                                    <li>Highlight and draw the attention of the user to all key features/insights in the screen</li>
-                                    <li>Draw the attention of the user to all key features/insights available to them</li>
-                                </ul>
-                            </div> */}
-                            <Image
-                                src="/docusaurus/1.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/docusaurus/1.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Welcome Page / Training Portal</h3>
                                 <p>Acts as the landing page and entry to the training modules.</p>
@@ -124,13 +114,18 @@ export function Docusaurus() {
                                     <li>User Action / Flow: User clicks to begin their training journey.</li>
                                 </ul>
                             </figcaption>
-                            <Image
-                                src="/docusaurus/3.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/docusaurus/3.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Overview of Product</h3>
                                 <p>Introduction to product structure and functionality.</p>
@@ -139,13 +134,18 @@ export function Docusaurus() {
                                     <li>User Action / Flow: Choose any sub-topic to continue.</li>
                                 </ul>
                             </figcaption>
-                            <Image
-                                src="/docusaurus/4.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/docusaurus/4.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Glossary</h3>
                                 <p>Provides definitions for pharmaceutical and platform terms.</p>
@@ -154,13 +154,18 @@ export function Docusaurus() {
                                     <li>User Action / Flow: User browses or looks up unfamiliar terms.</li>
                                 </ul>
                             </figcaption>
-                            <Image
-                                src="/docusaurus/5.png"
-                                width={800}
-                                height={600}
-                                alt="Snapshot 1"
-                                className="w-full h-auto rounded-lg shadow-lg"
-                            />
+                            <hr className="border-[#e8e5db] my-4" />
+
+                            <div className="space-y-7 max-w-3xl mx-auto">
+                                <Image
+                                    src="/docusaurus/5.png"
+                                    width={800}
+                                    height={600}
+                                    alt="Snapshot 1"
+                                    className="w-full h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Functional Flow</h3>
                                 <p>Visual explanation of the process flow (e.g., QC or manufacturing workflow).</p>
@@ -168,7 +173,8 @@ export function Docusaurus() {
                                     <li>Flowchart diagram with decision nodes, sample testing path, re-test logic.</li>
                                     <li>User Action / Flow: Follow visual logic for process understanding.</li>
                                 </ul>
-                            </figcaption>                            
+                            </figcaption>
+                            <hr className="border-[#e8e5db] my-4" />
                         </CardContent>
                     </Card>
                 </div>
