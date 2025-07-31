@@ -43,7 +43,7 @@ const navigationItems = [
   },
   {
     title: "SOP",
-    children: [{ title: "SOP for the Talent Acquisition", href: "/sop/talent-acquisition" }],
+    children: [{ title: "Talent Acquisition", href: "/sop/talent-acquisition" }],
   },
   {
     title: "Training Content",
@@ -140,6 +140,20 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
         onNavigate("user-manuals")
       } else if (href === "/product-tour/flow-of-english") {
         onNavigate("flow-of-english")
+      } else if (href === "/sop/talent-acquisition") {
+        onNavigate("talent-acquisition")
+      } else if (href === "/product-video/approvals-access") {
+        onNavigate("approvals-access")
+      } else if (href === "/product-video/apply-leave") {
+        onNavigate("apply-leave")
+      } else if (href === "/product-video/compensatory-off") {
+        onNavigate("compensatory-off")
+      } else if (href === "/product-video/navigating-media-library") {
+        onNavigate("navigating-media-library")
+      } else if (href === "/product-video/adjusting-flexible-duration") {
+        onNavigate("adjusting-flexible-duration")
+      } else if (href === "/product-video/update-seo") {
+        onNavigate("update-seo")
       } else {
         // Default navigation for other items (can be expanded later)
         onNavigate(href.replace("/", ""))

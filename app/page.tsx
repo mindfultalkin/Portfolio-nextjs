@@ -44,6 +44,30 @@ const UserManuals = lazy(() =>
 const FlowOfEnglish = lazy(() =>
   import("@/components/flow-of-english").then((module) => ({ default: module.FlowOfEnglish })),
 )
+const TalentAcquisition = lazy(() =>
+  import("@/components/talent-acquisition").then((module) => ({ default: module.TalentAcquisition })),
+)
+const ApprovalsAccess = lazy(() =>
+  import("@/components/approvals-access").then((module) => ({ default: module.ApprovalsAccess })),
+)
+const ApplyLeave = lazy(() =>
+  import("@/components/apply-leave").then((module) => ({ default: module.ApplyLeave })),
+)
+const CompensatoryOff = lazy(() =>
+  import("@/components/compensatory-off").then((module) => ({ default: module.CompensatoryOff })),
+)
+const NavigatingMediaLibrary = lazy(() =>
+  import("@/components/navigating-media-library").then((module) => ({ default: module.NavigatingMediaLibrary })),
+)
+const AdjustingFlexibleDuration = lazy(() =>
+  import("@/components/adjusting-flexible-duration").then((module) => ({ default: module.AdjustingFlexibleDuration })),
+)
+const UpdateSeo = lazy(() =>
+  import("@/components/update-seo").then((module) => ({ default: module.UpdateSeo })),
+)
+
+
+// Lazy load PDF demo component
 const PDFDemo = lazy(() =>
   import("@/app/content-pdf-demo/page").then((module) => ({ default: module.default })),
 )
@@ -141,6 +165,48 @@ export default function Home() {
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <FlowOfEnglish />
+          </Suspense>
+        )
+      case "talent-acquisition":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <TalentAcquisition />
+          </Suspense>
+        )
+      case "approvals-access":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <ApprovalsAccess />
+          </Suspense>
+        )
+      case "apply-leave":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <ApplyLeave />
+          </Suspense>
+        )
+      case "compensatory-off":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <CompensatoryOff />
+          </Suspense>
+        )
+      case "navigating-media-library":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <NavigatingMediaLibrary />
+          </Suspense>
+        )
+      case "adjusting-flexible-duration":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <AdjustingFlexibleDuration />
+          </Suspense>
+        )
+      case "update-seo":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <UpdateSeo />
           </Suspense>
         )
       case "pdf-demo":
