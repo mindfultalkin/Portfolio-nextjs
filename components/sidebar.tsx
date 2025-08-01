@@ -85,10 +85,7 @@ const navigationItems = [
       { title: "Flipped Class and Microlearning", href: "/blogs/flipped-class-microlearning" },
       { title: "Khan Academy Project BEAM", href: "/blogs/khan-academy-beam" },
       { title: "Elpis Empowering MSMEs for Smart Manufacturing", href: "/blogs/elpis-empowering-msmes" },
-      {
-        title: "Digital Transformation for Customer-Centric Experiences",
-        href: "/blogs/digital-transformation-customer-centric",
-      },
+      { title: "Digital Transformation for Customer-Centric Experiences", href: "/blogs/digital-transformation-customer-centric", },
       { title: "Maypole Dance with ManagedDevOps", href: "/blogs/maypole-dance-manageddevops" },
       { title: "Deliberate and Decide with Data", href: "/blogs/deliberate-decide-data" },
     ],
@@ -154,6 +151,28 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
         onNavigate("adjusting-flexible-duration")
       } else if (href === "/product-video/update-seo") {
         onNavigate("update-seo")
+      } else if (href === "/product-marketing/temperature-automation") {
+        onNavigate("temperature-automation")
+      } else if (href === "/product-marketing/elpis-platform") {
+        onNavigate("elpis-platform")
+      } else if (href === "/consulting/training-needs-bethliving") {
+        onNavigate("training-needs-bethliving")
+      } else if (href === "/consulting/training-needs-unisol") {
+        onNavigate("training-needs-unisol")
+      } else if (href === "/consulting/training-needs-hudini") {
+        onNavigate("training-needs-hudini")
+      } else if (href === "/blogs/flipped-class-microlearning") {
+        onNavigate("flipped-class-microlearning")
+      } else if (href === "/blogs/khan-academy-beam") {
+        onNavigate("khan-academy-beam")
+      } else if (href === "/blogs/elpis-empowering-msmes") {
+        onNavigate("elpis-empowering-msmes")
+      } else if (href === "/blogs/digital-transformation-customer-centric") {
+        onNavigate("digital-transformation-customer-centric")
+      } else if (href === "/blogs/maypole-dance-manageddevops") {
+        onNavigate("maypole-dance-manageddevops")
+      } else if (href === "/blogs/deliberate-decide-data") {
+        onNavigate("deliberate-decide-data")
       } else {
         // Default navigation for other items (can be expanded later)
         onNavigate(href.replace("/", ""))

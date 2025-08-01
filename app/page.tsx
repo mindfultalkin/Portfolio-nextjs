@@ -65,6 +65,39 @@ const AdjustingFlexibleDuration = lazy(() =>
 const UpdateSeo = lazy(() =>
   import("@/components/update-seo").then((module) => ({ default: module.UpdateSeo })),
 )
+const TemperatureAutomation = lazy(() =>
+  import("@/components/temperature-automation").then((module) => ({ default: module.TemperatureAutomation })),
+)
+const ElpisPlatform = lazy(() =>
+  import("@/components/elpis-platform").then((module) => ({ default: module.ElpisPlatform })),
+)
+const TrainingNeedsBethliving = lazy(() =>
+  import("@/components/training-needs-bethliving").then((module) => ({ default: module.TrainingNeedsBethliving })),
+)
+const TrainingNeedsUnisol = lazy(() =>
+  import("@/components/training-needs-unisol").then((module) => ({ default: module.TrainingNeedsUnisol })),
+)
+const TrainingNeedsHudini = lazy(() =>
+  import("@/components/training-needs-hudini").then((module) => ({ default: module.TrainingNeedsHudini })),
+)
+const FlippedClassMicrolearning = lazy(() =>
+  import("@/components/flipped-class-microlearning").then((module) => ({ default: module.FlippedClassMicrolearning })),
+)
+const KhanAcademyBeam = lazy(() =>
+  import("@/components/khan-academy-beam").then((module) => ({ default: module.KhanAcademyBeam })),
+)
+const ElpisEmpoweringMSMEs = lazy(() =>
+  import("@/components/elpis-empowering-msmes").then((module) => ({ default: module.ElpisEmpoweringMSMEs })),
+)
+const DigitalTransformationCustomerCentric = lazy(() =>
+  import("@/components/digital-transformation-customer-centric").then((module) => ({ default: module.DigitalTransformationCustomerCentric })),
+)
+const MaypoleDanceManagedDevOps = lazy(() =>
+  import("@/components/maypole-dance-manageddevops").then((module) => ({ default: module.MaypoleDanceManagedDevOps })),
+)
+const DeliberateDecideData = lazy(() =>
+  import("@/components/deliberate-decide-data").then((module) => ({ default: module.DeliberateDecideData })),
+)
 
 
 // Lazy load PDF demo component
@@ -207,6 +240,72 @@ export default function Home() {
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <UpdateSeo />
+          </Suspense>
+        )
+      case "temperature-automation":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <TemperatureAutomation />
+          </Suspense>
+        )
+      case "elpis-platform":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <ElpisPlatform />
+          </Suspense>
+        )
+      case "training-needs-bethliving":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <TrainingNeedsBethliving />
+          </Suspense>
+        )
+      case "training-needs-unisol":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <TrainingNeedsUnisol />
+          </Suspense>
+        )
+      case "training-needs-hudini":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <TrainingNeedsHudini />
+          </Suspense>
+        )
+      case "flipped-class-microlearning":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <FlippedClassMicrolearning />
+          </Suspense>
+        )
+      case "khan-academy-beam":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <KhanAcademyBeam />
+          </Suspense>
+        )
+      case "elpis-empowering-msmes":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <ElpisEmpoweringMSMEs />
+          </Suspense>
+        )
+      case "digital-transformation-customer-centric":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <DigitalTransformationCustomerCentric />
+          </Suspense>
+        )
+      case "maypole-dance-manageddevops":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <MaypoleDanceManagedDevOps />
+          </Suspense>
+        )
+      case "deliberate-decide-data":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <DeliberateDecideData />
           </Suspense>
         )
       case "pdf-demo":
