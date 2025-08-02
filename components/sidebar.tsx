@@ -57,7 +57,6 @@ const navigationItems = [
       { title: "Bethliving 9 USPs Guide", href: "/training-content/bethliving-9-usps" },
       { title: "Bethliving Storytelling for Sales", href: "/training-content/bethliving-storytelling" },
       { title: "Bethliving CRM Training Guide", href: "/training-content/bethliving-crm-training" },
-      { title: "Post Sales Journey", href: "/training-content/post-sales-journey" },
       { title: "Streamlining Post Sales Journey", href: "/training-content/streamlining-post-sales" },
     ],
   },
@@ -173,6 +172,26 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
         onNavigate("maypole-dance-manageddevops")
       } else if (href === "/blogs/deliberate-decide-data") {
         onNavigate("deliberate-decide-data")
+      } else if (href === "/training-content/health-insurance-scenarios") {
+        onNavigate("health-insurance-scenarios")
+      } else if (href === "/training-content/denial-code-co-197") {
+        onNavigate("denial-code-co-197")
+      } else if (href === "/training-content/questions-importance") {
+        onNavigate("questions-importance")
+      } else if (href === "/training-content/unisol-objection-handling") {
+        onNavigate("unisol-objection-handling")
+      } else if (href === "/training-content/bethliving-sales-success") {
+        onNavigate("bethliving-sales-success")
+      } else if (href === "/training-content/bethliving-objection-handling") {
+        onNavigate("bethliving-objection-handling")
+      } else if (href === "/training-content/bethliving-9-usps") {
+        onNavigate("bethliving-9-usps")
+      } else if (href === "/training-content/bethliving-storytelling") {
+        onNavigate("bethliving-storytelling")
+      } else if (href === "/training-content/bethliving-crm-training") {
+        onNavigate("bethliving-crm-training")
+      } else if (href === "/training-content/streamlining-post-sales") {
+        onNavigate("streamlining-post-sales")
       } else {
         // Default navigation for other items (can be expanded later)
         onNavigate(href.replace("/", ""))

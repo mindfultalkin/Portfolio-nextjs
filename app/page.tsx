@@ -98,6 +98,36 @@ const MaypoleDanceManagedDevOps = lazy(() =>
 const DeliberateDecideData = lazy(() =>
   import("@/components/deliberate-decide-data").then((module) => ({ default: module.DeliberateDecideData })),
 )
+const HealthInsuranceScenario = lazy(() =>
+  import("@/components/health-insurance-scenarios").then((module) => ({ default: module.HealthInsuranceScenario })),
+)
+const DenialCodeCo197 = lazy(() =>
+  import("@/components/denial-code-co-197").then((module) => ({ default: module.DenialCodeCo197 })),
+)
+const QuestionsImportance = lazy(() =>
+  import("@/components/questions-importance").then((module) => ({ default: module.QuestionsImportance })),
+)
+const UnisolObjectionHandling = lazy(() =>
+  import("@/components/unisol-objection-handling").then((module) => ({ default: module.UnisolObjectionHandling })),
+)
+const BethlivingSalesSuccess = lazy(() =>
+  import("@/components/bethliving-sales-success").then((module) => ({ default: module.BethlivingSalesSuccess })),
+)
+const BethlivingObjectionHandling = lazy(() =>
+  import("@/components/bethliving-objection-handling").then((module) => ({ default: module.BethlivingObjectionHandling })),
+)
+const Bethliving9USPS = lazy(() =>
+  import("@/components/bethliving-9-usps").then((module) => ({ default: module.Bethliving9USPS })),
+)
+const BethlivingStorytelling = lazy(() =>
+  import("@/components/bethliving-storytelling").then((module) => ({ default: module.BethlivingStorytelling })),
+)
+const BethlivingCRMTraining = lazy(() =>
+  import("@/components/bethliving-crm-training").then((module) => ({ default: module.BethlivingCRMTraining })),
+)
+const StreamliningPostSales = lazy(() =>
+  import("@/components/streamlining-post-sales").then((module) => ({ default: module.StreamliningPostSales })),
+)
 
 
 // Lazy load PDF demo component
@@ -306,6 +336,66 @@ export default function Home() {
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <DeliberateDecideData />
+          </Suspense>
+        )
+      case "health-insurance-scenarios":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <HealthInsuranceScenario />
+          </Suspense>
+        )
+      case "denial-code-co-197":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <DenialCodeCo197 />
+          </Suspense>
+        )
+      case "questions-importance":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <QuestionsImportance />
+          </Suspense>
+        )
+      case "unisol-objection-handling":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <UnisolObjectionHandling />
+          </Suspense>
+        )
+      case "bethliving-sales-success":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <BethlivingSalesSuccess />
+          </Suspense>
+        )
+      case "bethliving-objection-handling":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <BethlivingObjectionHandling />
+          </Suspense>
+        )
+      case "bethliving-9-usps":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <Bethliving9USPS />
+          </Suspense>
+        )
+      case "bethliving-storytelling":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <BethlivingStorytelling />
+          </Suspense>
+        )
+      case "bethliving-crm-training":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <BethlivingCRMTraining />
+          </Suspense>
+        )
+      case "streamlining-post-sales":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <StreamliningPostSales />
           </Suspense>
         )
       case "pdf-demo":
