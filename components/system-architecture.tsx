@@ -28,7 +28,7 @@ export function SystemArchitecture() {
                                 SUNDOOR | 10+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                This document presents the architecture of the SUNDOOR system, developed to control platform screen doors (PSDs) in metro stations. SUNDOOR ensures the safe and automated operation of sliding doors by monitoring motor behavior, detecting obstructions, and coordinating with the central metro controller. SUNDOOR is not responsible for compartment door synchronization—that is managed centrally. Instead, it communicates with the central controller using PROFINET protocol and manages one left-right door pair per unit. We have developed this architecture to comply with CENELEC SIL 3 safety standards, specifically EN 50126, EN 50128, and EN 50129. This document details SUNDOOR's components, interfaces, operating modes, safety logic, and diagnostics in alignment with these standards.
+                                This document contains the architecture of the SUNDOOR system, developed to control platform screen doors (PSDs) in metro stations. SUNDOOR ensures the safe and automated operation of sliding doors by monitoring motor behavior, detecting obstructions, and coordinating with the central metro controller. This document details SUNDOOR's components, interfaces, operating modes, safety logic, and diagnostics in alignment with these standards.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Define the system architecture for SUNDOOR, which automates and secures platform screen doors in metro stations.</li>
@@ -43,7 +43,7 @@ export function SystemArchitecture() {
 
                     {/* Documentation Workflow Section */}
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-                        <CardHeader>
+                        {/* <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
                                 Matrix
                             </CardTitle>
@@ -138,14 +138,13 @@ export function SystemArchitecture() {
                             <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                                 Documentation Workflow Matrix - SUNDOOR System Architecture
                             </p>
-                        </CardContent>
+                        </CardContent> */}
                         <CardContent>
                             <div className="relative h-[800px] w-full">
                                 <PDFViewer
                                     url="/software-development-life-cycle/system-architecture.pdf"
                                     scale={100}
                                     showControls={true}
-                                    enableDownload={true}
                                 />
                             </div>
                         </CardContent>

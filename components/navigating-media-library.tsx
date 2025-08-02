@@ -22,8 +22,7 @@ export function NavigatingMediaLibrary() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Media Library in Amagi NOW
-
+                                Media Library in a Mediatech product
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                                 Media Library | Video Management

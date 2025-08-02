@@ -43,7 +43,7 @@ export function KhanAcademyBeam() {
 
                     {/* Documentation Workflow Section */}
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-                        <CardHeader>
+                        {/* <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
                                 Documentation Workflow
                             </CardTitle>
@@ -103,7 +103,7 @@ export function KhanAcademyBeam() {
                             <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                                 This structured approach ensures that our documentation is not only comprehensive but also user-friendly, making it easy for learners to navigate and find the information they need.
                             </p>
-                        </CardContent>
+                        </CardContent> */}
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">

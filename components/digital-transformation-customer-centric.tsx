@@ -44,7 +44,7 @@ export function DigitalTransformationCustomerCentric() {
 
                     {/* Documentation Workflow Section */}
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-                        <CardHeader>
+                        {/* <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
                                 Documentation Workflow for Digital Transformation
                             </CardTitle>
@@ -94,7 +94,7 @@ export function DigitalTransformationCustomerCentric() {
                             <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                                 This workflow ensures that we not only create high-quality content but also continuously improve it based on user feedback and changing needs. By following these steps, we can maintain a high standard of documentation that supports our digital transformation goals.
                             </p>
-                        </CardContent>
+                        </CardContent> */}
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">

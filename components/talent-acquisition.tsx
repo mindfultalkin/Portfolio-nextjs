@@ -22,13 +22,13 @@ export function TalentAcquisition() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Talent Acquisition (TA)
+                                SOP for Talent Acquisition (TA)
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                                 Talent Acquisition (TA) | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this SOP to define a structured, scalable, and tech-enabled Talent Acquisition (TA) process at Innoventes. Designed for TA team members, this document outlines the complete hiring journey — from intake to onboarding — including continuous sourcing, structured interviews, AI-driven screening, offer negotiation, and candidate engagement.<br/>Our goal is to ensure consistency, efficiency, and strategic alignment in hiring across all teams and hiring partners, while leveraging data, automation, and standardized communication.
+                                We created this Standard Operating Procedure (SOP) to define a structured, scalable, and tech-enabled Talent Acquisition (TA) process at Innoventes. Designed for TA team members, this document outlines the complete hiring journey — from intake to onboarding — including continuous sourcing, structured interviews, AI-driven screening, offer negotiation, and candidate engagement.<br/>Our goal is to ensure consistency, efficiency, and strategic alignment in hiring across all teams and hiring partners, while leveraging data, automation, and standardized communication.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>To standardize TA processes, reduce dropouts, and improve hire quality using tools, checklists, and repeatable workflows.</li>
@@ -44,7 +44,7 @@ export function TalentAcquisition() {
 
                     {/* Documentation Workflow Section */}
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-                        <CardHeader>
+                        {/* <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
                                 Talent Acquisition Documentation Workflow
                             </CardTitle>
@@ -99,7 +99,7 @@ export function TalentAcquisition() {
                             <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                                 This workflow ensures that every step of the TA process is documented, reviewed, and approved by relevant stakeholders. It allows us to maintain high standards of quality and consistency across all our hiring practices.
                             </p>
-                        </CardContent>
+                        </CardContent> */}
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">

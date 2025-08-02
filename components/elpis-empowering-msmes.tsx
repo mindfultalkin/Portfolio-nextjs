@@ -44,7 +44,7 @@ export function ElpisEmpoweringMSMEs() {
 
                     {/* Documentation Workflow Section */}
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-                        <CardHeader>
+                        {/* <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
                                 Documentation Workflow
                             </CardTitle>
@@ -94,7 +94,7 @@ export function ElpisEmpoweringMSMEs() {
                             <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                                 By addressing these challenges, Elpis empowers MSMEs to not only survive but thrive in the competitive manufacturing landscape. Our platform is designed to be accessible, affordable, and adaptable, ensuring that every business can harness the power of smart manufacturing.
                             </p>
-                        </CardContent>
+                        </CardContent> */}
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">

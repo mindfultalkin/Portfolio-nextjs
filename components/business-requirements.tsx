@@ -22,13 +22,13 @@ export function BusinessRequirements() {
           <div className="text-center space-y-6">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                Business Requirements
+                Business Requirement Document (BRD)
               </h1>
               <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                 SaaSmile | 60+ articles | 12 weeks
               </Badge>
               <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                This document outlines the business and technical requirements for building the SaaSmile shipping plugin for Magento 2. The plugin enables merchants to manage shipments, generate AWBs, and track deliveries directly within their eCommerce platform. Designed for use by SaaSmile Admins, Carrier Admins, and Merchant Users, the plugin supports integration with multiple logistics carriers. Each carrier requires a separate plugin instance. The scope is limited to Magento 2, with Magento 1 development officially discontinued. This serves as a foundational guide for consistent, scalable plugin development across partners and platforms.
+                This document outlines the business and technical requirements for building the SaaSmile shipping plugin for Magento 2. The plugin enables merchants to manage shipments, generate AWBs, and track deliveries directly within their eCommerce platform. Designed for use by SaaSmile Admins, Carrier Admins, and Merchant Users, the plugin supports integration with multiple logistics carriers. This serves as a foundational guide for consistent, scalable plugin development across partners and platforms.
               </p>
               <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                 <li>Define business and technical requirements for the SaaSmile shipping plugin on Magento 2</li>
@@ -43,7 +43,7 @@ export function BusinessRequirements() {
 
           {/* Documentation Workflow Section */}
           <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-            <CardHeader>
+            {/* <CardHeader>
               <CardTitle className="text-2xl text-[#0894b5]">
                 Matrix
               </CardTitle>
@@ -121,14 +121,13 @@ export function BusinessRequirements() {
               <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                 Our documentation workflow followed a structured set of steps and activities - from planning, content creation, review, and publishing. This ensured consistent quality across the 60+ articles.
               </p>
-            </CardContent>            
+            </CardContent>             */}
             <CardContent>
               <div className="relative h-[800px] w-full">
                 <PDFViewer
                   url="/software-development-life-cycle/business-requirements.pdf"
                   scale={100}
                   showControls={true}
-                  enableDownload={true}
                 />
               </div>
             </CardContent>

@@ -55,7 +55,7 @@ export function MainContent() {
           <div className="text-center space-y-6">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                Technical Documenation
+                Technical Documentation
               </h1>
               {/* <p className="text-lg sm:text-xl text-[#666666] max-w-3xl mx-auto leading-relaxed">
                 Clear user-focused documentation to simplify complex systems.
@@ -63,12 +63,29 @@ export function MainContent() {
               <h2 className="text-2xl sm:text-3xl lg:text-2xl text-[#0894b5] leading-tight">
                 Guiding Users From The First Click
               </h2>
-              <p className="text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
-                User-focused documentation simplifies complex systems by making information clear, accessible, and easy to navigate, enhancing overall user experience.
-              </p>
               <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                 Stay Ahead with Documentation
               </Badge>
+              <p className="text-left text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
+                Clear, visual, and relevant documentation makes it easier for users to understand a product, follow a process, or make decisions. The right documentation
+              </p>
+              <ul className="text-left list-disc list-inside text-[#666666] text-1">
+                <li>Saves time</li>
+                <li>Reduces errors</li>
+                <li>Improves customer experience</li>
+                <li>Makes people work independently</li>
+              </ul>
+              <p className="text-left text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
+                Our work ranges from
+              </p>
+              <ul className="text-left list-disc list-inside text-[#666666] text-1">
+                <li>FAQs to User manuals to Knowledge base</li>
+                <li>SOPs to Digital product tours</li>
+                <li>Blogs and whitepapers to Training content.</li>
+              </ul>
+              <p className="text-left text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
+                Explore samples of our work using the side menu to view delivered projects.
+              </p>
             </div>
           </div>
 
@@ -102,7 +119,10 @@ export function MainContent() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-1 text-[#666666] mx-auto leading-relaxed">
-                A comprehensive approach to organizing technical and support content based on user intent and business needs.
+                Our team of industry experts can guide you through to create a comprehensive approach to organizaing technical and support content based on your audience, your product or service offering, and your business needs.
+              </p>
+              <p className="text-1 text-[#666666] mx-auto leading-relaxed">
+                Documents that one may need could be a FAQ, a user manual, a how-to video, a case study, a billing and feature mapping document, or something else. Each product or company may choose to create some or all of these documents based on their business needs and the document maturity stage—determined by the product’s complexity, user base, and growth strategy.
               </p>
               <div className="relative w-full max-w-4xl mx-auto" style={{ maxHeight: '600px' }}>
                 <Image
@@ -142,9 +162,6 @@ export function MainContent() {
                   <li>Product requirements specifications</li>
                 </ul>
               </div>
-              <p className="text-1 text-[#666666] mx-auto leading-relaxed">
-                Each product or company may choose to create some or all of these documents based on their business needs and the document maturity stage—determined by the product’s complexity, user base, and growth strategy.
-              </p>
             </CardContent>
           </Card>
 

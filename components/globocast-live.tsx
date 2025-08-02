@@ -44,7 +44,7 @@ export function GlobocastLive() {
 
                     {/* Documentation Workflow Section */}
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-                        <CardHeader>
+                        {/* <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
                                 GloboCast Live Documentation Workflow
                             </CardTitle>
@@ -99,7 +99,7 @@ export function GlobocastLive() {
                             <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                                 This matrix outlines the key sections and topics covered in the GloboCast Live user manual, providing a structured overview of the platform's capabilities and operational guidelines.
                             </p>
-                        </CardContent>
+                        </CardContent> */}
                         <CardContent>
                             <div className="relative h-[800px] w-full">
                                 <PDFViewer

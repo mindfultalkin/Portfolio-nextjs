@@ -25,14 +25,14 @@ const navigationItems = [
     title: "User Manual",
     children: [{ title: "GloboCast Live", href: "/user-manual/globocast-live" }],
   },
-  {
-    title: "Content Strategy",
-    children: [
-      { title: "FAQs, Troubleshooting Tips, and Glossary", href: "/content-strategy/faqs-troubleshooting" },
-      { title: "Product Requirements Specifications", href: "/content-strategy/product-requirements" },
-      { title: "User Manuals", href: "/content-strategy/user-manuals" },
-    ],
-  },
+  // {
+  //   title: "Content Strategy",
+  //   children: [
+  //     { title: "FAQs, Troubleshooting Tips, and Glossary", href: "/content-strategy/faqs-troubleshooting" },
+  //     { title: "Product Requirements Specifications", href: "/content-strategy/product-requirements" },
+  //     { title: "User Manuals", href: "/content-strategy/user-manuals" },
+  //   ],
+  // },
   {
     title: "Product Tour/ User Onboarding",
     children: [{ title: "Flow of English", href: "/product-tour/flow-of-english" }],

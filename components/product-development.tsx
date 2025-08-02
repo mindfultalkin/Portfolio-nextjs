@@ -43,7 +43,7 @@ export function ProductDevelopment() {
 
                     {/* Documentation Workflow Section */}
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-                        <CardHeader>
+                        {/* <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
                                 Matrix
                             </CardTitle>
@@ -123,14 +123,13 @@ export function ProductDevelopment() {
                             <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                                 Our documentation workflow followed a structured set of steps and activities - from planning, content creation, review, and publishing. This ensured consistent quality across the 60+ articles.
                             </p>
-                        </CardContent>
+                        </CardContent> */}
                         <CardContent>
                             <div className="relative h-[800px] w-full">
                                 <PDFViewer
                                     url="/software-development-life-cycle/product-development.pdf"
                                     scale={100}
                                     showControls={true}
-                                    // enableDownload={true}
                                 />
                             </div>
                         </CardContent>

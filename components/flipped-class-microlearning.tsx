@@ -42,7 +42,7 @@ export function FlippedClassMicrolearning() {
 
                     {/* Documentation Workflow Section */}
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
-                        <CardHeader>
+                        {/* <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
                                 Documentation Workflow
                             </CardTitle>
@@ -102,7 +102,7 @@ export function FlippedClassMicrolearning() {
                             <p className="text-lg text-[#666666] mx-auto text-left leading-relaxed">
                                 This workflow ensures that our documentation is not only comprehensive but also user-friendly, enabling both customers and internal teams to fully leverage the product's capabilities.
                             </p>
-                        </CardContent>
+                        </CardContent> */}
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
