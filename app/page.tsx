@@ -8,8 +8,8 @@ import { MainContent } from "@/components/main-content"
 const CommunicationCoachBot = lazy(() =>
   import("@/components/communication-coach-bot").then((module) => ({ default: module.CommunicationCoachBot })),
 )
-const KnowledgeBaseZendesk = lazy(() =>
-  import("@/components/cyber-security").then((module) => ({ default: module.CyberSecurity })),
+const DataSecuritySoftware = lazy(() =>
+  import("@/components/data-security-software").then((module) => ({ default: module.DataSecuritySoftware })),
 )
 const KnowledgeBaseDocument360 = lazy(() =>
   import("@/components/document360").then((module) => ({ default: module.Document360 })),
@@ -158,10 +158,10 @@ export default function Home() {
             <CommunicationCoachBot />
           </Suspense>
         )
-      case "cyber-security":
+      case "data-security-software":
         return (
           <Suspense fallback={<LoadingSpinner />}>
-            <KnowledgeBaseZendesk />
+            <DataSecuritySoftware />
           </Suspense>
         )        
       case "document360":

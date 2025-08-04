@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 
 
-export function CyberSecurity() {
+export function DataSecuritySoftware() {
     const workflowSteps = [
         "Planning & Strategy",
         "Content Creation",
@@ -22,13 +22,13 @@ export function CyberSecurity() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Cyber Security Help Center
+                                Data Security Software Help Center
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                                 Zendesk | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We built a complete self-service portal for Cyber Security from the ground up. The key highlights are:
+                                We built a complete self-service portal for Data Security Software from the ground up. The key highlights are:
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>60+ detailed, user-friendly help articles</li>
@@ -63,7 +63,7 @@ export function CyberSecurity() {
                                         <tr className="bg-transparent">
                                             <td className="p-3 border border-[#e8e5db] font-semibold">Overview</td>
                                             <td className="p-3 border border-[#e8e5db]">Product Overview</td>
-                                            <td className="p-3 border border-[#e8e5db]">Summary of Cyber Security platform, features, modules, and compliance benefits.</td>
+                                            <td className="p-3 border border-[#e8e5db]">Summary of Data Security Software platform, features, modules, and compliance benefits.</td>
                                         </tr>
                                         <tr className="bg-transparent">
                                             <td className="p-3 border border-[#e8e5db] font-semibold">Getting Started</td>
@@ -105,18 +105,18 @@ export function CyberSecurity() {
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
-                                Take a tour of Cyber Security's Help Center
+                                Take a tour of Data Security Software's Help Center
                             </CardTitle>
                         </CardHeader>
 
                         <CardContent className="space-y-6">
                             <p className="text-[#666666]">
-                                The Cyber Security product served two distinct user groups: Chief Information Security Officers (CISOs) and Information Security Architects. The knowledgebase landing page was designed with a clean, intuitive layout that clearly presented two separate user journeys, allowing each audience to navigate content relevant to their needs.
+                                The Data Security Software product served two distinct user groups: Chief Information Security Officers (CISOs) and Information Security Architects. The knowledgebase landing page was designed with a clean, intuitive layout that clearly presented two separate user journeys, allowing each audience to navigate content relevant to their needs.
                             </p>
 
                             <div className="space-y-7 max-w-3xl mx-auto">
                                 <Image
-                                    src="/cyber-security/1.png"
+                                    src="/data-security-software/1.png"
                                     width={800}
                                     height={600}
                                     alt="Snapshot 1"
@@ -126,13 +126,13 @@ export function CyberSecurity() {
 
                             <figcaption className="space-y-2 text-[#666666]">
                                 <h3 className="font-semibold">Help Center Landing Page</h3>
-                                <p>The Cyber Security product had two kinds of users - Chief Information Security Officers and the Information Security Architects. The landing page was simple and clear to show two different paths to proceed for the end user's purpose.</p>
+                                <p>The Data Security Software product had two kinds of users - Chief Information Security Officers and the Information Security Architects. The landing page was simple and clear to show two different paths to proceed for the end user's purpose.</p>
                             </figcaption>
                             <hr className="border-[#e8e5db] my-4" />
 
                             <div className="space-y-7 max-w-3xl mx-auto">
                                 <Image
-                                    src="/cyber-security/2.png"
+                                    src="/data-security-software/2.png"
                                     width={800}
                                     height={600}
                                     alt="Snapshot 1"
@@ -148,7 +148,7 @@ export function CyberSecurity() {
 
                             <div className="space-y-7 max-w-3xl mx-auto">
                                 <Image
-                                    src="/cyber-security/3.png"
+                                    src="/data-security-software/3.png"
                                     width={800}
                                     height={600}
                                     alt="Snapshot 1"
@@ -164,7 +164,7 @@ export function CyberSecurity() {
 
                             <div className="space-y-7 max-w-3xl mx-auto">
                                 <Image
-                                    src="/cyber-security/4.png"
+                                    src="/data-security-software/4.png"
                                     width={800}
                                     height={600}
                                     alt="Snapshot 1"
@@ -180,7 +180,7 @@ export function CyberSecurity() {
 
                             <div className="space-y-7 max-w-3xl mx-auto">
                                 <Image
-                                    src="/cyber-security/5.png"
+                                    src="/data-security-software/5.png"
                                     width={800}
                                     height={600}
                                     alt="Snapshot 1"
@@ -196,7 +196,7 @@ export function CyberSecurity() {
 
                             <div className="space-y-7 max-w-3xl mx-auto">
                                 <Image
-                                    src="/cyber-security/6.png"
+                                    src="/data-security-software/6.png"
                                     width={800}
                                     height={600}
                                     alt="Snapshot 1"
@@ -215,7 +215,7 @@ export function CyberSecurity() {
                                 <h3 className="text-xl text-[#0894b5] mb-4">Video Walkthrough</h3>
                                 <div className="aspect-video bg-black rounded-lg">
                                     <video
-                                        src="cyber-security/cyber-security.mp4"
+                                        src="data-security-software/data-security-software.mp4"
                                         controls
                                         className="w-full h-full rounded-lg"
                                     >
