@@ -102,6 +102,20 @@ const navigationItems = [
 export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) {
   const [expandedItems, setExpandedItems] = useState<string[]>(["Knowledge Base", "Software Development Life Cycle"])
   const [isMobileOpen, setIsMobileOpen] = useState(false)
+  const navRef = useCallback((node: HTMLElement | null) => {
+    if (node) {
+      // Restore scroll position from sessionStorage if it exists
+      const savedScrollPosition = sessionStorage.getItem('sidebarScrollPosition')
+      if (savedScrollPosition) {
+        node.scrollTop = parseInt(savedScrollPosition, 10)
+      }
+    }
+  }, [])
+
+  const handleScroll = useCallback((e: React.UIEvent<HTMLElement>) => {
+    // Save scroll position to sessionStorage
+    sessionStorage.setItem('sidebarScrollPosition', e.currentTarget.scrollTop.toString())
+  }, [])
 
   const toggleExpanded = useCallback((title: string) => {
     setExpandedItems((prev) => (prev.includes(title) ? prev.filter((item) => item !== title) : [...prev, title]))
@@ -218,6 +232,8 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
         </div>
 
         <nav
+          ref={navRef}
+          onScroll={handleScroll}
           className="p-3 sm:p-4 space-y-1 sm:space-y-2 overflow-y-auto scrollbar-hide"
           style={{ maxHeight: "calc(100vh - 120px)" }}
           role="navigation"
