@@ -33,18 +33,22 @@ export function MaypoleDanceManagedDevOps() {
                         </div>
                     </div>
 
-                    {/* Embedded Content Section */}
-                    <div className="w-full rounded-lg overflow-hidden shadow-lg">
-                        <div className="relative aspect-[16/9]">
-                            <iframe
-                                src="https://blog.innoventestech.com/maypole-dance-with-manageddevops-731aab33da3a"
-                                className="absolute top-0 left-0 w-full h-full border-0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            />
+                    {/* Content Section */}
+                    <div className="w-full rounded-lg overflow-hidden p-6">
+                        <div className="space-y-6">
+                            <div className="flex items-center justify-center">
+                                <a
+                                    href="https://blog.innoventestech.com/maypole-dance-with-manageddevops-731aab33da3a"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center px-6 py-3 bg-[#0894b5] text-white rounded-lg hover:bg-[#067a96] transition-colors"
+                                >
+                                    View Blog Post
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

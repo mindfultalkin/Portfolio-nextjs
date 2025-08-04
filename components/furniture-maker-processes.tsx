@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { PDFViewer } from "@/components/pdf-viewer"
 
-export function DeliberateDecideData() {
+export function FurnitureMakerProcesses() {
     const workflowSteps = [
         "Planning & Strategy",
         "Content Creation",
@@ -22,13 +22,13 @@ export function DeliberateDecideData() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Deliberate and Decide with Data
+                                SOPs for a Furniture Making Company
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Data-Driven Decision Making
+                                SOP Playbook | 50+ articles | 8 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We authored this article to emphasize how organizations can move beyond collecting data to truly leverage data as strategic decisions tools. It explores how businesses can create data products, implement data-driven decision-making (DDDM), and build a culture where analytics becomes central—not incidental—to daily operations.
+                                We developed this SOP playbook to help cabinet and closet manufacturers standardize their core workflows—reducing repetitive questions, minimizing dependency on managers, and increasing operational consistency. Rooted in lean manufacturing strategies, the guide empowers your team to work on the business instead of always working in it.
                             </p>
                         </div>
                     </div>
@@ -37,19 +37,17 @@ export function DeliberateDecideData() {
                     <div className="w-full rounded-lg overflow-hidden p-6">
                         <div className="space-y-6">
                             <div className="flex items-center justify-center">
-                                <a
-                                    href="https://blog.innoventestech.com/deliberate-and-decide-with-data-f27911d14c90"
+                                <a 
+                                    href="https://sites.google.com/mindfultalk.in/cabinet-factory"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center px-6 py-3 bg-[#0894b5] text-white rounded-lg hover:bg-[#067a96] transition-colors"
                                 >
-                                    View Blog Post
+                                    View SOP Playbook
                                 </a>
                             </div>
                         </div>
                     </div>
-
-
 
                 </div>
             </div>

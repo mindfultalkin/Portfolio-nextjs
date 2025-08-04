@@ -98,7 +98,7 @@ export function DigitalTransformationCustomerCentric() {
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
-                                PDF Viewer for Digital Transformation Article
+                                Digital Transformation to Make Customer the King
                             </CardTitle>
                         </CardHeader>
                         <CardContent>

@@ -47,6 +47,9 @@ const FlowOfEnglish = lazy(() =>
 const TalentAcquisition = lazy(() =>
   import("@/components/talent-acquisition").then((module) => ({ default: module.TalentAcquisition })),
 )
+const FurnitureMakerProcesses = lazy(() =>
+  import("@/components/furniture-maker-processes").then((module) => ({ default: module.FurnitureMakerProcesses })),
+)
 const ApprovalsAccess = lazy(() =>
   import("@/components/approvals-access").then((module) => ({ default: module.ApprovalsAccess })),
 )
@@ -104,9 +107,9 @@ const HealthInsuranceScenario = lazy(() =>
 const DenialCodeCo197 = lazy(() =>
   import("@/components/denial-code-co-197").then((module) => ({ default: module.DenialCodeCo197 })),
 )
-const QuestionsImportance = lazy(() =>
-  import("@/components/questions-importance").then((module) => ({ default: module.QuestionsImportance })),
-)
+// const QuestionsImportance = lazy(() =>
+//   import("@/components/questions-importance").then((module) => ({ default: module.QuestionsImportance })),
+// )
 const UnisolObjectionHandling = lazy(() =>
   import("@/components/unisol-objection-handling").then((module) => ({ default: module.UnisolObjectionHandling })),
 )
@@ -236,6 +239,12 @@ export default function Home() {
             <TalentAcquisition />
           </Suspense>
         )
+      case "furniture-maker-processes":
+        return (
+          <Suspense fallback={<LoadingSpinner />}>
+            <FurnitureMakerProcesses />
+          </Suspense>
+        )
       case "approvals-access":
         return (
           <Suspense fallback={<LoadingSpinner />}>
@@ -350,12 +359,12 @@ export default function Home() {
             <DenialCodeCo197 />
           </Suspense>
         )
-      case "questions-importance":
-        return (
-          <Suspense fallback={<LoadingSpinner />}>
-            <QuestionsImportance />
-          </Suspense>
-        )
+      // case "questions-importance":
+      //   return (
+      //     <Suspense fallback={<LoadingSpinner />}>
+      //       <QuestionsImportance />
+      //     </Suspense>
+      //   )
       case "unisol-objection-handling":
         return (
           <Suspense fallback={<LoadingSpinner />}>

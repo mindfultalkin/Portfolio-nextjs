@@ -43,14 +43,17 @@ const navigationItems = [
   },
   {
     title: "SOP",
-    children: [{ title: "Talent Acquisition", href: "/sop/talent-acquisition" }],
+    children: [
+      { title: "Talent Acquisition", href: "/sop/talent-acquisition" },
+      { title: "Furniture Maker Processes", href: "/sop/furniture-maker-processes" },
+    ],
   },
   {
     title: "Training Content",
     children: [
       { title: "Health Insurance Cost-of-Care Scenarios", href: "/training-content/health-insurance-scenarios" },
       { title: "Denial Code CO 197", href: "/training-content/denial-code-co-197" },
-      { title: "Why Are Questions Important?", href: "/training-content/questions-importance" },
+      // { title: "Why Are Questions Important?", href: "/training-content/questions-importance" },
       { title: "Unisol Sales Objection Handling", href: "/training-content/unisol-objection-handling" },
       { title: "Bethliving Sales Success Guide", href: "/training-content/bethliving-sales-success" },
       { title: "Bethliving Objection Handling Guide", href: "/training-content/bethliving-objection-handling" },
@@ -152,6 +155,8 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
         onNavigate("flow-of-english")
       } else if (href === "/sop/talent-acquisition") {
         onNavigate("talent-acquisition")
+      } else if (href === "/sop/furniture-maker-processes") {
+        onNavigate("furniture-maker-processes")
       } else if (href === "/product-video/approvals-access") {
         onNavigate("approvals-access")
       } else if (href === "/product-video/apply-leave") {
@@ -190,8 +195,8 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
         onNavigate("health-insurance-scenarios")
       } else if (href === "/training-content/denial-code-co-197") {
         onNavigate("denial-code-co-197")
-      } else if (href === "/training-content/questions-importance") {
-        onNavigate("questions-importance")
+        // } else if (href === "/training-content/questions-importance") {
+        //   onNavigate("questions-importance")
       } else if (href === "/training-content/unisol-objection-handling") {
         onNavigate("unisol-objection-handling")
       } else if (href === "/training-content/bethliving-sales-success") {
@@ -289,8 +294,8 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
                 <button
                   onClick={() => handleNavigation(item.href || "#")}
                   className={`block p-2 sm:p-3 text-sm sm:text-base font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${item.active
-                      ? "bg-[#0894b5] text-[#fffcf3] shadow-md focus:ring-[#fffcf3]"
-                      : "text-[#2c2c2c] hover:bg-[#ebe8dd] focus:ring-[#0894b5]"
+                    ? "bg-[#0894b5] text-[#fffcf3] shadow-md focus:ring-[#fffcf3]"
+                    : "text-[#2c2c2c] hover:bg-[#ebe8dd] focus:ring-[#0894b5]"
                     }`}
                 >
                   <span className="truncate block">{item.title}</span>
