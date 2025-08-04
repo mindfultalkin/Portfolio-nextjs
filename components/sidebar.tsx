@@ -7,10 +7,10 @@ const navigationItems = [
   {
     title: "Knowledge Base",
     children: [
-      { title: "Zendesk", href: "/knowledge-base/secuvy" },
+      { title: "Cyber Security", href: "/knowledge-base/cyber-security" },
       { title: "Document360", href: "/knowledge-base/document360" },
       { title: "Docusaurus", href: "/knowledge-base/docusaurus" },
-      { title: "SharePoint", href: "/knowledge-base/share-point" },
+      { title: "Share Point", href: "/knowledge-base/share-point" },
     ],
   },
   {
@@ -112,8 +112,8 @@ export function Sidebar({ onNavigate }: { onNavigate: (page: string) => void }) 
       // Special handling for specific pages
       if (href === "/api-docs/communication-coach-bot") {
         onNavigate("communication-coach-bot")
-      } else if (href === "/knowledge-base/secuvy") {
-        onNavigate("secuvy")
+      } else if (href === "/knowledge-base/cyber-security") {
+        onNavigate("cyber-security")
       } else if (href === "/knowledge-base/document360") {
         onNavigate("document360")
       } else if (href === "/knowledge-base/docusaurus") {

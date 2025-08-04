@@ -9,7 +9,7 @@ const CommunicationCoachBot = lazy(() =>
   import("@/components/communication-coach-bot").then((module) => ({ default: module.CommunicationCoachBot })),
 )
 const KnowledgeBaseZendesk = lazy(() =>
-  import("@/components/secuvy").then((module) => ({ default: module.Secuvy })),
+  import("@/components/cyber-security").then((module) => ({ default: module.CyberSecurity })),
 )
 const KnowledgeBaseDocument360 = lazy(() =>
   import("@/components/document360").then((module) => ({ default: module.Document360 })),
@@ -158,7 +158,7 @@ export default function Home() {
             <CommunicationCoachBot />
           </Suspense>
         )
-      case "secuvy":
+      case "cyber-security":
         return (
           <Suspense fallback={<LoadingSpinner />}>
             <KnowledgeBaseZendesk />
