@@ -28,16 +28,16 @@ export function GlobocastLive() {
                                 GloboCast Live | 10+ User Manual | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this user manual to guide operators, broadcasters, and live event managers in effectively using GloboCast Live and GloboCast Fluid — our powerful cloud-based platforms for live channel orchestration and OTT event streaming.<br/>These tools enable users to manage scheduled and unscheduled live events with flexibility, ensuring smooth transitions, real-time updates, and broadcast-grade controls — all from a remote interface. Whether you're streaming a news bulletin, a sports tournament, or a product launch, this document helps you navigate the platform and deliver a seamless viewer experience.
+                                This user manual guides operators, broadcasters, and live event managers to effectively use GloboCast Live and GloboCast Fluid — our powerful cloud-based platforms for live channel orchestration and OTT event streaming.<br/>These tools enable users to manage scheduled and unscheduled live events with flexibility, ensuring smooth transitions, real-time updates, and broadcast-grade controls — all from a remote interface. <br/>Whether you're streaming a news bulletin, a sports tournament, or a product launch, this document helps you navigate the platform and deliver a seamless viewer experience.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Provide a step-by-step user guide for operating GloboCast Live and GloboCast Fluid.</li>
-                                <li>Channel operators and broadcast managers handling live streaming workflows.</li>
-                                <li>24x7 linear playout system with live and file-based content.</li>
-                                <li>On-demand OTT live event orchestration with support for multiple concurrent streams.</li>
-                                <li>Live source switching, graphics overlays, break insertion</li>
-                                <li>Immediate or scheduled live event handling</li>
-                                <li>Real-time control through a web UI</li>
+                                <li>On the field support document for channel operators and broadcast managers handling live streaming workflows.</li>
+                                {/* <li>24x7 linear playout system with live and file-based content.</li> */}
+                                {/* <li>On-demand OTT live event orchestration with support for multiple concurrent streams.</li> */}
+                                {/* <li>Live source switching, graphics overlays, break insertion</li> */}
+                                {/* <li>Immediate or scheduled live event handling</li> */}
+                                {/* <li>Real-time control through a web UI</li> */}
                             </ul>
                         </div>
                     </div>

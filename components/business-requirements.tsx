@@ -28,14 +28,14 @@ export function BusinessRequirements() {
                 SaaSmile | 60+ articles | 12 weeks
               </Badge>
               <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                This document outlines the business and technical requirements for building the SaaSmile shipping plugin for Magento 2. The plugin enables merchants to manage shipments, generate AWBs, and track deliveries directly within their eCommerce platform. Designed for use by SaaSmile Admins, Carrier Admins, and Merchant Users, the plugin supports integration with multiple logistics carriers. This serves as a foundational guide for consistent, scalable plugin development across partners and platforms.
+                This document outlines the <b>business and technical requirements</b> for building the SaaSmile shipping plugin for Magento 2. The plugin enables merchants to manage shipments, generate AWBs, and track deliveries directly within their eCommerce platform. Designed for use by SaaSmile Admins, Carrier Admins, and Merchant Users, the plugin supports integration with multiple logistics carriers. <br/>This document serves as a foundational guide for consistent, scalable plugin development across partners and platforms.
               </p>
               <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                 <li>Define business and technical requirements for the SaaSmile shipping plugin on Magento 2</li>
-                <li>Enables merchants to manage shipments, generate AWBs, track deliveries, and view remittances.</li>
-                <li>Focused solely on Magento 2 (Magento 1 support discontinued)</li>
-                <li>Merchants using multiple carriers must configure separate plugins.</li>
-                <li>Designed to support future white-labeled plugins for platforms like Shopify, WooCommerce, and Salla</li>
+                {/* <li>Enables merchants to manage shipments, generate AWBs, track deliveries, and view remittances.</li> */}
+                {/* <li>Focused solely on Magento 2 (Magento 1 support discontinued)</li> */}
+                {/* <li>Merchants using multiple carriers must configure separate plugins.</li> */}
+                <li>Design for supporting multiple white-labeled plugins for platforms like Shopify, WooCommerce, and Salla</li>
                 <li>Provides a foundational guide for consistent, scalable plugin development across partners and platforms</li>
               </ul>
             </div>

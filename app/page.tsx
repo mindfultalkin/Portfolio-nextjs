@@ -1,140 +1,149 @@
 "use client"
 
-import { useState, Suspense, lazy } from "react"
+import dynamic from 'next/dynamic'
+import { useState, Suspense } from "react"
 import { Sidebar } from "@/components/sidebar"
 import { MainContent } from "@/components/main-content"
 
-// Lazy load components for better performance
-const CommunicationCoachBot = lazy(() =>
-  import("@/components/communication-coach-bot").then((module) => ({ default: module.CommunicationCoachBot })),
+// Dynamically import components for better performance
+const CommunicationCoachBot = dynamic(
+  () => import("@/components/communication-coach-bot").then((mod) => mod.CommunicationCoachBot),
+  { ssr: false }
 )
-const DataSecuritySoftware = lazy(() =>
-  import("@/components/data-security-software").then((module) => ({ default: module.DataSecuritySoftware })),
+const DataSecuritySoftware = dynamic(
+  () => import("@/components/data-security-software").then((mod) => mod.DataSecuritySoftware),
+  { ssr: false }
 )
-const KnowledgeBaseDocument360 = lazy(() =>
-  import("@/components/document360").then((module) => ({ default: module.Document360 })),
+const KnowledgeBaseDocument360 = dynamic(
+  () => import("@/components/document360").then((mod) => mod.Document360),
+  { ssr: false }
 )
-const KnowledgeBaseDocusaurus = lazy(() =>
-  import("@/components/docusaurus").then((module) => ({ default: module.Docusaurus })),
+const KnowledgeBaseDocusaurus = dynamic(
+  () => import("@/components/docusaurus").then((mod) => mod.Docusaurus),
+  { ssr: false }
 )
-const SharePoint = lazy(() =>
-  import("@/components/share-point").then((module) => ({ default: module.SharePoint })),
+const SharePoint = dynamic(
+  () => import("@/components/share-point").then((mod) => mod.SharePoint),
+  { ssr: false }
 )
-const BusinessRequirements = lazy(() =>
-  import("@/components/business-requirements").then((module) => ({ default: module.BusinessRequirements })),
+const BusinessRequirements = dynamic(
+  () => import("@/components/business-requirements").then((mod) => mod.BusinessRequirements),
+  { ssr: false }
 )
-const SystemArchitecture = lazy(() =>
-  import("@/components/system-architecture").then((module) => ({ default: module.SystemArchitecture })),
+const SystemArchitecture = dynamic(
+  () => import("@/components/system-architecture").then((mod) => mod.SystemArchitecture),
+  { ssr: false }
 )
-const ProductDevelopment = lazy(() =>
-  import("@/components/product-development").then((module) => ({ default: module.ProductDevelopment })),
+const ProductDevelopment = dynamic(
+  () => import("@/components/product-development").then((mod) => mod.ProductDevelopment),
+  { ssr: false }
 )
-const GlobocastLive = lazy(() =>
+const GlobocastLive = dynamic(() =>
   import("@/components/globocast-live").then((module) => ({ default: module.GlobocastLive })),
 )
-const FAQsTroubleshooting = lazy(() =>
+const FAQsTroubleshooting = dynamic(() =>
   import("@/components/faqs-troubleshooting").then((module) => ({ default: module.FAQsTroubleshooting })),
 )
-const ProductRequirements = lazy(() =>
+const ProductRequirements = dynamic(() =>
   import("@/components/product-requirements").then((module) => ({ default: module.ProductRequirements })),
 )
-const UserManuals = lazy(() =>
+const UserManuals = dynamic(() =>
   import("@/components/user-manuals").then((module) => ({ default: module.UserManuals })),
 )
-const FlowOfEnglish = lazy(() =>
+const FlowOfEnglish = dynamic(() =>
   import("@/components/flow-of-english").then((module) => ({ default: module.FlowOfEnglish })),
 )
-const TalentAcquisition = lazy(() =>
+const TalentAcquisition = dynamic(() =>
   import("@/components/talent-acquisition").then((module) => ({ default: module.TalentAcquisition })),
 )
-const FurnitureMakerProcesses = lazy(() =>
+const FurnitureMakerProcesses = dynamic(() =>
   import("@/components/furniture-maker-processes").then((module) => ({ default: module.FurnitureMakerProcesses })),
 )
-const ApprovalsAccess = lazy(() =>
+const ApprovalsAccess = dynamic(() =>
   import("@/components/approvals-access").then((module) => ({ default: module.ApprovalsAccess })),
 )
-const ApplyLeave = lazy(() =>
+const ApplyLeave = dynamic(() =>
   import("@/components/apply-leave").then((module) => ({ default: module.ApplyLeave })),
 )
-const CompensatoryOff = lazy(() =>
+const CompensatoryOff = dynamic(() =>
   import("@/components/compensatory-off").then((module) => ({ default: module.CompensatoryOff })),
 )
-const NavigatingMediaLibrary = lazy(() =>
+const NavigatingMediaLibrary = dynamic(() =>
   import("@/components/navigating-media-library").then((module) => ({ default: module.NavigatingMediaLibrary })),
 )
-const AdjustingFlexibleDuration = lazy(() =>
+const AdjustingFlexibleDuration = dynamic(() =>
   import("@/components/adjusting-flexible-duration").then((module) => ({ default: module.AdjustingFlexibleDuration })),
 )
-const UpdateSeo = lazy(() =>
+const UpdateSeo = dynamic(() =>
   import("@/components/update-seo").then((module) => ({ default: module.UpdateSeo })),
 )
-const TemperatureAutomation = lazy(() =>
+const TemperatureAutomation = dynamic(() =>
   import("@/components/temperature-automation").then((module) => ({ default: module.TemperatureAutomation })),
 )
-const ElpisPlatform = lazy(() =>
+const ElpisPlatform = dynamic(() =>
   import("@/components/elpis-platform").then((module) => ({ default: module.ElpisPlatform })),
 )
-const TrainingNeedsBethliving = lazy(() =>
+const TrainingNeedsBethliving = dynamic(() =>
   import("@/components/training-needs-bethliving").then((module) => ({ default: module.TrainingNeedsBethliving })),
 )
-const TrainingNeedsUnisol = lazy(() =>
+const TrainingNeedsUnisol = dynamic(() =>
   import("@/components/training-needs-unisol").then((module) => ({ default: module.TrainingNeedsUnisol })),
 )
-const TrainingNeedsHudini = lazy(() =>
+const TrainingNeedsHudini = dynamic(() =>
   import("@/components/training-needs-hudini").then((module) => ({ default: module.TrainingNeedsHudini })),
 )
-const FlippedClassMicrolearning = lazy(() =>
+const FlippedClassMicrolearning = dynamic(() =>
   import("@/components/flipped-class-microlearning").then((module) => ({ default: module.FlippedClassMicrolearning })),
 )
-const KhanAcademyBeam = lazy(() =>
+const KhanAcademyBeam = dynamic(() =>
   import("@/components/khan-academy-beam").then((module) => ({ default: module.KhanAcademyBeam })),
 )
-const ElpisEmpoweringMSMEs = lazy(() =>
+const ElpisEmpoweringMSMEs = dynamic(() =>
   import("@/components/elpis-empowering-msmes").then((module) => ({ default: module.ElpisEmpoweringMSMEs })),
 )
-const DigitalTransformationCustomerCentric = lazy(() =>
+const DigitalTransformationCustomerCentric = dynamic(() =>
   import("@/components/digital-transformation-customer-centric").then((module) => ({ default: module.DigitalTransformationCustomerCentric })),
 )
-const MaypoleDanceManagedDevOps = lazy(() =>
+const MaypoleDanceManagedDevOps = dynamic(() =>
   import("@/components/maypole-dance-manageddevops").then((module) => ({ default: module.MaypoleDanceManagedDevOps })),
 )
-const DeliberateDecideData = lazy(() =>
+const DeliberateDecideData = dynamic(() =>
   import("@/components/deliberate-decide-data").then((module) => ({ default: module.DeliberateDecideData })),
 )
-const HealthInsuranceScenario = lazy(() =>
+const HealthInsuranceScenario = dynamic(() =>
   import("@/components/health-insurance-scenarios").then((module) => ({ default: module.HealthInsuranceScenario })),
 )
-const DenialCodeCo197 = lazy(() =>
+const DenialCodeCo197 = dynamic(() =>
   import("@/components/denial-code-co-197").then((module) => ({ default: module.DenialCodeCo197 })),
 )
-// const QuestionsImportance = lazy(() =>
+// const QuestionsImportance = dynamic(() =>
 //   import("@/components/questions-importance").then((module) => ({ default: module.QuestionsImportance })),
 // )
-const UnisolObjectionHandling = lazy(() =>
+const UnisolObjectionHandling = dynamic(() =>
   import("@/components/unisol-objection-handling").then((module) => ({ default: module.UnisolObjectionHandling })),
 )
-const BethlivingSalesSuccess = lazy(() =>
+const BethlivingSalesSuccess = dynamic(() =>
   import("@/components/bethliving-sales-success").then((module) => ({ default: module.BethlivingSalesSuccess })),
 )
-const BethlivingObjectionHandling = lazy(() =>
+const BethlivingObjectionHandling = dynamic(() =>
   import("@/components/bethliving-objection-handling").then((module) => ({ default: module.BethlivingObjectionHandling })),
 )
-const Bethliving9USPS = lazy(() =>
+const Bethliving9USPS = dynamic(() =>
   import("@/components/bethliving-9-usps").then((module) => ({ default: module.Bethliving9USPS })),
 )
-const BethlivingStorytelling = lazy(() =>
+const BethlivingStorytelling = dynamic(() =>
   import("@/components/bethliving-storytelling").then((module) => ({ default: module.BethlivingStorytelling })),
 )
-const BethlivingCRMTraining = lazy(() =>
+const BethlivingCRMTraining = dynamic(() =>
   import("@/components/bethliving-crm-training").then((module) => ({ default: module.BethlivingCRMTraining })),
 )
-const StreamliningPostSales = lazy(() =>
+const StreamliningPostSales = dynamic(() =>
   import("@/components/streamlining-post-sales").then((module) => ({ default: module.StreamliningPostSales })),
 )
 
 
-// Lazy load PDF demo component
-const PDFDemo = lazy(() =>
+// dynamic load PDF demo component
+const PDFDemo = dynamic(() =>
   import("@/app/content-pdf-demo/page").then((module) => ({ default: module.default })),
 )
 

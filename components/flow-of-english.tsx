@@ -28,7 +28,7 @@ export function FlowOfEnglish() {
                                 Learner
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this structured guide to showcase Flow of English – Learner, a dynamic, interactive learning solution designed for children aged 8–12. Built on ChipperSage's proven pedagogy, this resource delivers impactful English language learning using multisensory methods—audio, visual, and tactile—making reading and comprehension engaging and effective.
+                                A structured guide to showcase Flow of English – Learner, a dynamic, interactive learning solution designed for children aged 8–12. Flow of English delivers impactful English language learning using multisensory methods—audio, visual, and tactile—making reading and comprehension engaging and effective.<br/>The digital product tour helps learners navigate the platform and explore new features. This enhances user engagement and product adoption.
                             </p>
                         </div>
                     </div>

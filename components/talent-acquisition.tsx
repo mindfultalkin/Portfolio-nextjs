@@ -28,15 +28,15 @@ export function TalentAcquisition() {
                                 Talent Acquisition (TA) | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this Standard Operating Procedure (SOP) to define a structured, scalable, and tech-enabled Talent Acquisition (TA) process at Innoventes. Designed for TA team members, this document outlines the complete hiring journey — from intake to onboarding — including continuous sourcing, structured interviews, AI-driven screening, offer negotiation, and candidate engagement.<br/>Our goal is to ensure consistency, efficiency, and strategic alignment in hiring across all teams and hiring partners, while leveraging data, automation, and standardized communication.
+                                We created this Standard Operating Procedure (SOP) to define a structured, scalable, and tech-enabled Talent Acquisition (TA) process. Designed for TA team members, this document outlines the complete hiring journey — from intake to onboarding — including continuous sourcing, structured interviews, AI-driven screening, offer negotiation, and candidate engagement.<br/>Our goal is to ensure consistency, efficiency, and strategic alignment in hiring across all teams and hiring partners, while leveraging data, automation, and standardized communication.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>To standardize TA processes, reduce dropouts, and improve hire quality using tools, checklists, and repeatable workflows.</li>
-                                <li>TA team at Innoventes (internal) + extended hiring partners and evaluators.</li>
-                                <li>Freshteam, HackerRank, iMocha, ChatGPT, Fathom, ATS, resume parsers, AI-driven screening tools.</li>
-                                <li>Includes 60+ articles covering all aspects of the TA process, from intake to onboarding.</li>
-                                <li>Developed over 12 weeks with input from TA team members, hiring managers, and external partners.</li>
-                                <li>Focuses on continuous sourcing, structured interviews, AI-driven screening, offer negotiation, and candidate engagement.</li>
+                                {/* <li>TA team at Innoventes (internal) + extended hiring partners and evaluators.</li> */}
+                                {/* <li>Freshteam, HackerRank, iMocha, ChatGPT, Fathom, ATS, resume parsers, AI-driven screening tools.</li> */}
+                                <li>Includes workflow diagrams covering all aspects of the TA process, from intake to onboarding.</li>
+                                <li>Developed over 2 weeks with input from TA team members, hiring managers, and external partners.</li>
+                                {/* <li>Focuses on continuous sourcing, structured interviews, AI-driven screening, offer negotiation, and candidate engagement.</li> */}
                                 <li>Ensures consistency, efficiency, and strategic alignment in hiring across all teams and hiring partners.</li>
                             </ul>
                         </div>
@@ -103,7 +103,7 @@ export function TalentAcquisition() {
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
-                                Talent Acquisition Documentation
+                                Talent Acquisition SOP
                             </CardTitle>
                         </CardHeader>
                         <CardContent>

@@ -28,15 +28,15 @@ export function SystemArchitecture() {
                                 SUNDOOR | 10+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                This document contains the architecture of the SUNDOOR system, developed to control platform screen doors (PSDs) in metro stations. SUNDOOR ensures the safe and automated operation of sliding doors by monitoring motor behavior, detecting obstructions, and coordinating with the central metro controller. This document details SUNDOOR's components, interfaces, operating modes, safety logic, and diagnostics in alignment with these standards.
+                                This document contains the architecture of the SUNDOOR system, developed to control platform screen doors (PSDs) in metro stations. SUNDOOR ensures the safe and automated operation of sliding doors by monitoring motor behavior, detecting obstructions, and coordinating with the central metro controller. <br/>This document details SUNDOOR's components, interfaces, operating modes, safety logic, and diagnostics in alignment with industry standards.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Define the system architecture for SUNDOOR, which automates and secures platform screen doors in metro stations.</li>
                                 <li>Designed to meet SIL 3 requirements per CENELEC norms.</li>
-                                <li>Controls door opening/closing, detects obstructions, logs events, and communicates with the metro's central system.</li>
-                                <li>Operates in Learn Mode (setup), Normal, Auto, Isolation, and Bypass.</li>
-                                <li>PROFINET, RS-485, USB, CAN; used for diagnostics, communication, and configuration.</li>
-                                <li>Follows EN 50126, 50128, 50129, and 50159 standards for functional safety and communication integrity.</li>
+                                {/* <li>Controls door opening/closing, detects obstructions, logs events, and communicates with the metro's central system.</li> */}
+                                {/* <li>Operates in Learn Mode (setup), Normal, Auto, Isolation, and Bypass.</li> */}
+                                {/* <li>PROFINET, RS-485, USB, CAN; used for diagnostics, communication, and configuration.</li> */}
+                                <li>Incorporates EN 50126, 50128, 50129, and 50159 standards for functional safety and communication integrity.</li>
                             </ul>
                         </div>
                     </div>

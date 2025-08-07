@@ -22,13 +22,13 @@ export function HealthInsuranceScenario() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Health Insurance Scenarios
+                                Simulation: Health Insurance Cost-of-Care
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                                 Health Insurance Scenarios | Videos | 8 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                This document outlines various health insurance scenarios to help users understand the complexities of health insurance policies, claims, and benefits. It serves as a guide for both customers and internal teams to navigate through different situations effectively.
+                                This is a simulation to help train medical billing professionals to understand the complexities of health insurance policies, claims, and benifits. This simulation serves as a comprehensive guide to medical billing professionals to navigate through different situations effectively.
                             </p>
                         </div>
                     </div>

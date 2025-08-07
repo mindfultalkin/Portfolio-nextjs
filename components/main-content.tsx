@@ -63,7 +63,7 @@ export function MainContent() {
               <h2 className="text-2xl sm:text-3xl lg:text-2xl text-[#0894b5] leading-tight">
                 Guiding Users From The First Click
               </h2>
-              <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
+              <Badge variant="outline" className="bg-[#f5f2e8] border-[#f48d03] text-[#f48d03] px-4 py-2">
                 Stay Ahead with Documentation
               </Badge>
               <p className="text-left text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
@@ -74,18 +74,7 @@ export function MainContent() {
                 <li>Reduces errors</li>
                 <li>Improves customer experience</li>
                 <li>Makes people work independently</li>
-              </ul>
-              <p className="text-left text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
-                Our work ranges from
-              </p>
-              <ul className="text-left list-disc list-inside text-[#666666] text-1">
-                <li>FAQs to User manuals to Knowledge base</li>
-                <li>SOPs to Digital product tours</li>
-                <li>Blogs and whitepapers to Training content.</li>
-              </ul>
-              <p className="text-left text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
-                Explore samples of our work using the side menu to view delivered projects.
-              </p>
+              </ul>              
             </div>
           </div>
 
@@ -109,6 +98,17 @@ export function MainContent() {
               )
             })}
           </div>
+          <p className="text-left text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
+            Our work ranges from
+          </p>
+          <ul className="text-left list-disc list-inside text-[#666666] text-1">
+            <li>FAQs to User manuals to Knowledge base</li>
+            <li>SOPs to Digital product tours</li>
+            <li>Blogs and whitepapers to Training content.</li>
+          </ul>
+          <p className="text-left text-lg sm:text-1 text-[#666666] mx-auto leading-relaxed">
+            <i>Explore samples of our work using the side menu to view delivered projects.</i>
+          </p>
 
           {/* Content Strategy Framework Section */}
           <Card className="bg-[#f5f2e8] border-[#e8e5db]">
@@ -119,7 +119,7 @@ export function MainContent() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-1 text-[#666666] mx-auto leading-relaxed">
-                Our team of industry experts can guide you through to create a comprehensive approach to organizaing technical and support content based on your audience, your product or service offering, and your business needs.
+                Our team of industry experts can guide you through to create a comprehensive approach to organizing technical and support content based on your audience, your product or service offering, and your business needs.
               </p>
               <p className="text-1 text-[#666666] mx-auto leading-relaxed">
                 Documents that one may need could be a FAQ, a user manual, a how-to video, a case study, a billing and feature mapping document, or something else. Each product or company may choose to create some or all of these documents based on their business needs and the document maturity stage—determined by the product’s complexity, user base, and growth strategy.
@@ -138,7 +138,7 @@ export function MainContent() {
             </CardContent>
             <CardHeader>
               <CardTitle className="text-2xl text-[#0894b5] flex items-center">
-                Mindfultalk.in recommends documentation to improve satisfaction and usage.
+                A sample recommendation of necessary documentation to enhance usage and improve satisfaction.
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -147,19 +147,21 @@ export function MainContent() {
                 <ul className="list-disc list-inside text-[#666666] text-1">
                   <li>Explainer videos</li>
                   <li>User manuals</li>
-                  <li>Product technical documentation</li>
+                  <li>Product tours</li>
                   <li>Third party integration documentation</li>
                   <li>API documentation</li>
                   <li>FAQs</li>
                   <li>Glossary of terms</li>
-                  <li>Customer onboarding documentation</li>
+                  <li>Customer onboarding checklist</li>
                 </ul>
               </div>
               <div className="bg-[#fffcf3] p-4 rounded-lg border border-[#e8e5db]">
                 <h4 className="font-semibold text-[#0894b5] mb-2">Internal:</h4>
                 <ul className="list-disc list-inside text-[#666666] text-1">
-                  <li>User journey</li>
+                  <li>Training Material</li>
                   <li>Product requirements specifications</li>
+                  <li>Product Technical Documentation</li>
+                  <li>Standard Operating Procedures (SOPs)</li>
                 </ul>
               </div>
             </CardContent>

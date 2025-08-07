@@ -28,7 +28,7 @@ export function FurnitureMakerProcesses() {
                                 SOP Playbook | 50+ articles | 8 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We developed this SOP playbook to help cabinet and closet manufacturers standardize their core workflows—reducing repetitive questions, minimizing dependency on managers, and increasing operational consistency. Rooted in lean manufacturing strategies, the guide empowers your team to work on the business instead of always working in it.
+                                A SOP playbook to help cabinet and closet manufacturers standardize their core workflows—reducing repetitive questions, minimizing dependency on managers, and increasing operational consistency. Rooted in lean manufacturing strategies, the guide empowers your team to work on the business instead of always working in it.
                             </p>
                         </div>
                     </div>

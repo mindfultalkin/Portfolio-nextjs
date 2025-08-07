@@ -42,7 +42,7 @@ const navigationItems = [
     children: [{ title: "Communication Coach Bot", href: "/api-docs/communication-coach-bot" }],
   },
   {
-    title: "SOP",
+    title: "Standard Operating Procedure",
     children: [
       { title: "Talent Acquisition", href: "/sop/talent-acquisition" },
       { title: "Furniture Maker Processes", href: "/sop/furniture-maker-processes" },
@@ -51,8 +51,8 @@ const navigationItems = [
   {
     title: "Training Content",
     children: [
-      { title: "Health Insurance Cost-of-Care Scenarios", href: "/training-content/health-insurance-scenarios" },
-      { title: "Denial Code CO 197", href: "/training-content/denial-code-co-197" },
+      { title: "Simulation: Health Insurance Cost-of-Care", href: "/training-content/health-insurance-scenarios" },
+      { title: "Simulation: Claim Resolution", href: "/training-content/denial-code-co-197" },
       // { title: "Why Are Questions Important?", href: "/training-content/questions-importance" },
       { title: "Unisol Sales Objection Handling", href: "/training-content/unisol-objection-handling" },
       { title: "Bethliving Sales Success Guide", href: "/training-content/bethliving-sales-success" },
