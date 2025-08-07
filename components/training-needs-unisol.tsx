@@ -28,14 +28,14 @@ export function TrainingNeedsUnisol() {
                                 Training Needs Report | 30+ insights | 8 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this training needs report to support Unisol’s transformation into a market-leading solutions partner for fiber optic products and services. With clients across telecom, IT, energy, defence, and infrastructure, Unisol is poised to scale — but needed structured training, stronger internal processes, and enhanced cross-functional collaboration.<br />This document captures insights from leadership and team discussions, identifying gaps in communication, coordination, product understanding, and sales enablement. The recommendations serve as a roadmap for institutionalizing knowledge, building customer trust, and driving consistent performance across departments.
+                                This training needs report supports the telecom company's transformation into a market-leading solutions partner for fiber optic products and services.<br />This document captures insights from leadership and team discussions, identifying gaps in communication, coordination, product understanding, and sales enablement. The recommendations serve as a roadmap for institutionalizing knowledge, building customer trust, and driving consistent performance across departments.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Understand current team capabilities and design a company-wide training and process improvement plan.</li>
-                                <li>Product knowledge gaps, especially in new team members.</li>
-                                <li>Fragmented sales, procurement, and project handoffs.</li>
-                                <li>Limited documentation of institutional knowledge.</li>
-                                <li>Empower Unisol teams to close more deals, improve project execution, and enhance customer relationships.</li>
+                                <li>Document product knowledge gaps, especially in new team members.</li>
+                                <li>Identify fragmented sales, procurement, and project handoffs.</li>
+                                <li>Complete the limited documentation of institutional knowledge.</li>
+                                <li>Empower the telecom comapny's teams to close more deals, improve project execution, and enhance customer relationships.</li>
                             </ul>
                         </div>
                     </div>

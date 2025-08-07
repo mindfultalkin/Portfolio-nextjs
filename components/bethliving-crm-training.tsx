@@ -22,21 +22,21 @@ export function BethlivingCRMTraining() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Bethliving CRM Training Guide   
+                                CRM Training Guide   
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                                 CRM Training Guide | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this CRM training guide to help Bethliving’s showroom, field, and backend teams build a culture of process visibility, timely follow-up, and customer-first action. At its core, CRM is not just a tool—it’s a behavior. This guide aligns sales and service touchpoints to ensure every team member uses the CRM as a single source of truth from enquiry to delivery.<br/>When followed consistently, this approach improves conversion rates, reduces confusion, and strengthens customer confidence across the journey.
+                                This CRM training guide helps showroom, field, and backend teams build a culture of process visibility, timely follow-up, and customer-first action. This guide aligns sales and service touchpoints to ensure every team member uses the CRM as a single source of truth from enquiry to delivery.<br/>When followed consistently, this approach improves conversion rates, reduces confusion, and strengthens customer confidence across the journey.
                             </p>
-                            <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
+                            {/* <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>CRM is not optional — It replaces memory, sticky notes, and personal records.</li>
                                 <li>Every interaction should be logged in the CRM, not just sales.</li>
                                 <li>Use the CRM to track customer journeys, not just sales numbers.</li>
                                 <li>Follow up on every lead within 24 hours to maintain momentum.</li>
                                 <li>Use tags and categories to segment customers for personalized follow-ups.</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
 

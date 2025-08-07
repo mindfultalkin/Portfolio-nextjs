@@ -29,11 +29,11 @@ export function ApprovalsAccess() {
                                  Accessing Approvals | Video
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this quick explainer video to help internal users understand how to access and manage approval workflows within the company’s internal systems. Whether you're requesting access, tracking pending items, or reviewing approvals across departments, this guide ensures a smooth and intuitive user experience with step-by-step visuals.<br />This resource is designed for new employees, team leads, and operations staff who need a refresher or a first-time walkthrough on handling approval requests efficiently.
+                                A quick explainer video to help internal users understand how to access and manage approval workflows within the company’s internal systems. Whether you're requesting access, tracking pending items, or reviewing approvals across departments, this guide ensures a smooth and intuitive user experience with step-by-step visuals.<br />This resource is designed for new employees, team leads, and operations staff who need a refresher or a first-time walkthrough on handling approval requests efficiently.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Reduces delays in internal processes by guiding users on where and how to access approvals.</li>
-                                <li>Internal employees, HR/admin users, project managers, finance leads.</li>
+                                <li>Targeted for internal employees, HR/admin users, project managers, finance leads.</li>
                                 <li>Short, step-by-step screen capture video with voiceover (or captions) for clarity.</li>
                                 <li>Users feel confident managing approvals without relying on manual help or follow-ups.</li>
                                 <li>Improves overall efficiency and reduces bottlenecks in internal workflows.</li>

@@ -28,15 +28,15 @@ export function TemperatureAutomation() {
                                 Temperature Automation | 50+ articles | 10 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We developed this document to showcase a real-world digital transformation journey undertaken by a leading food retailer, in collaboration with Elpis, to modernize temperature-controlled environments using IoT, automation, and AI.<br/>Our aim was to demonstrate how intelligent systems can not only enhance food safety and operational efficiency, but also scale across industries like pharmaceuticals, healthcare, logistics, and manufacturing. This case study acts as a blueprint for how data-driven automation can redefine refrigeration management with precision, sustainability, and predictability at its core.
+                                This document showcases a real-world digital transformation journey undertaken by a leading food retailer, in collaboration with in IOT company, to modernize temperature-controlled environments using IoT, automation, and AI.<br/>Our aim was to demonstrate how intelligent systems can not only enhance food safety and operational efficiency, but also scale across industries like pharmaceuticals, healthcare, logistics, and manufacturing. This case study acts as a blueprint for how data-driven automation can redefine refrigeration management with precision, sustainability, and predictability at its core.
                             </p>
-                            <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
+                            {/* <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Transform outdated manual refrigeration processes into a centralized, automated, real-time monitoring system.</li>
                                 <li>IoT sensors, Elpis E-REMOS platform, AI-driven alerting, predictive maintenance, remote visibility.</li>
                                 <li>Food retail, pharma, healthcare, logistics, agriculture, manufacturing</li>
                                 <li>Reduce food waste, ensure compliance, improve safety, enhance customer trust.</li>
                                 <li>Scalable solution adaptable to various temperature-sensitive industries.</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
 

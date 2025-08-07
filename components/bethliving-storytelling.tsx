@@ -22,13 +22,13 @@ export function BethlivingStorytelling() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Bethliving – Storytelling for Sales
+                                Storytelling for Sales
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                                 Storytelling Guide | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this storytelling guide to help Bethliving’s showroom and sales staff transform product features into emotional, relatable conversations. Storytelling allows salespeople to shift from pitching products to sharing real-life outcomes—making the customer the hero and the salesperson a trusted guide.<br/>This guide shows how to use past experiences, client examples, and success stories to handle concerns with empathy and influence decisions without pressure.
+                                This is a storytelling guide to help showroom and sales staff transform product features into emotional, relatable conversations. Storytelling allows salespeople to shift from pitching products to sharing real-life outcomes—making the customer the hero and the salesperson a trusted guide.<br/>This guide shows how to use past experiences, client examples, and success stories to handle concerns with empathy and influence decisions without pressure.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>People remember stories, not specs.</li>
@@ -45,7 +45,7 @@ export function BethlivingStorytelling() {
                     <Card className="bg-[#f5f2e8] border-[#e8e5db]">
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
-                                Storytelling Workflow
+                                Storytelling Guide
                             </CardTitle>
                         </CardHeader>
                         <CardContent>

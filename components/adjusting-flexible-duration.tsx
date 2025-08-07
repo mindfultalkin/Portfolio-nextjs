@@ -28,14 +28,14 @@ export function AdjustingFlexibleDuration() {
                                 Flexible Duration | Video Tutorial | 3 minutes
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this video to introduce the Flexible Duration feature in Amagi NOW, empowering operators to dynamically handle content timing during playout. This feature is particularly useful for live events, last-minute schedule changes, or runtime uncertainties where rigid scheduling isn't feasible.<br />This tutorial walks users through how to enable, configure, and use flexible durations to ensure seamless transitions and uninterrupted playout—even when actual content length varies from planned schedules.
+                                This video introduces the Flexible Duration feature in mediatech product, empowering operators to dynamically handle content timing during playout.<br />This tutorial walks users through how to enable, configure, and use flexible durations to ensure seamless transitions and uninterrupted playout—even when actual content length varies from planned schedules.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
-                                <li>To help operators manage unpredictable content timing with flexible playout windows.</li>
-                                <li>Channel schedulers, broadcast operators, and playout engineers using Amagi NOW.</li>
-                                <li>To ensure smooth transitions and uninterrupted playout even when content length varies.</li>
-                                <li>To reduce manual intervention and improve operational efficiency during live events or schedule changes.</li>
-                                <li>To enhance user experience by providing flexibility in content scheduling.</li>
+                                <li>Helps operators manage unpredictable content timing with flexible playout windows.</li>
+                                {/* <li>Channel schedulers, broadcast operators, and playout engineers using Amagi NOW.</li> */}
+                                {/* <li>To ensure smooth transitions and uninterrupted playout even when content length varies.</li> */}
+                                {/* <li>To reduce manual intervention and improve operational efficiency during live events or schedule changes.</li> */}
+                                <li>Enhance user experience by providing flexibility in content scheduling.</li>
                             </ul>
                         </div>
                     </div>

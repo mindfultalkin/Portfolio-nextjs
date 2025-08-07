@@ -7,10 +7,10 @@ const navigationItems = [
   {
     title: "Knowledge Base",
     children: [
-      { title: "Data Security Software", href: "/knowledge-base/data-security-software" },
+      { title: "Zendesk", href: "/knowledge-base/data-security-software" },
       { title: "Document360", href: "/knowledge-base/document360" },
       { title: "Docusaurus", href: "/knowledge-base/docusaurus" },
-      { title: "Share Point", href: "/knowledge-base/share-point" },
+      { title: "Microsoft SharePoint", href: "/knowledge-base/share-point" },
     ],
   },
   {
@@ -54,12 +54,12 @@ const navigationItems = [
       { title: "Simulation: Health Insurance Cost-of-Care", href: "/training-content/health-insurance-scenarios" },
       { title: "Simulation: Claim Resolution", href: "/training-content/denial-code-co-197" },
       // { title: "Why Are Questions Important?", href: "/training-content/questions-importance" },
-      { title: "Unisol Sales Objection Handling", href: "/training-content/unisol-objection-handling" },
-      { title: "Bethliving Sales Success Guide", href: "/training-content/bethliving-sales-success" },
-      { title: "Bethliving Objection Handling Guide", href: "/training-content/bethliving-objection-handling" },
-      { title: "Bethliving 9 USPs Guide", href: "/training-content/bethliving-9-usps" },
-      { title: "Bethliving Storytelling for Sales", href: "/training-content/bethliving-storytelling" },
-      { title: "Bethliving CRM Training Guide", href: "/training-content/bethliving-crm-training" },
+      { title: "Sales Objection Handling", href: "/training-content/unisol-objection-handling" },
+      { title: "Sales Success Guide", href: "/training-content/bethliving-sales-success" },
+      { title: "Objection Handling Guide", href: "/training-content/bethliving-objection-handling" },
+      { title: "USPs Handbook", href: "/training-content/bethliving-9-usps" },
+      { title: "Storytelling for Sales", href: "/training-content/bethliving-storytelling" },
+      { title: "CRM Training Guide", href: "/training-content/bethliving-crm-training" },
       { title: "Streamlining Post Sales Journey", href: "/training-content/streamlining-post-sales" },
     ],
   },
@@ -78,7 +78,7 @@ const navigationItems = [
     title: "Product Marketing",
     children: [
       { title: "Temperature Automation", href: "/product-marketing/temperature-automation" },
-      { title: "Elpis Platform", href: "/product-marketing/elpis-platform" },
+      { title: "Smart Manufacturing Platform", href: "/product-marketing/elpis-platform" },
     ],
   },
   {
@@ -86,7 +86,7 @@ const navigationItems = [
     children: [
       { title: "Flipped Class and Microlearning", href: "/blogs/flipped-class-microlearning" },
       { title: "Khan Academy Project BEAM", href: "/blogs/khan-academy-beam" },
-      { title: "Elpis Empowering MSMEs for Smart Manufacturing", href: "/blogs/elpis-empowering-msmes" },
+      { title: "Empowering MSMEs for Smart Manufacturing", href: "/blogs/elpis-empowering-msmes" },
       { title: "Digital Transformation for Customer-Centric Experiences", href: "/blogs/digital-transformation-customer-centric", },
       { title: "Maypole Dance with ManagedDevOps", href: "/blogs/maypole-dance-manageddevops" },
       { title: "Deliberate and Decide with Data", href: "/blogs/deliberate-decide-data" },
@@ -95,9 +95,9 @@ const navigationItems = [
   {
     title: "Consulting",
     children: [
-      { title: "Training Needs Analysis - Bethliving", href: "/consulting/training-needs-bethliving" },
-      { title: "Training Needs Report - Unisol", href: "/consulting/training-needs-unisol" },
-      { title: "Training Needs Analysis - Hudini", href: "/consulting/training-needs-hudini" },
+      { title: "Training Needs Analysis", href: "/consulting/training-needs-bethliving" },
+      { title: "Training Needs Report", href: "/consulting/training-needs-unisol" },
+      { title: "Training Needs Analysis", href: "/consulting/training-needs-hudini" },
     ],
   },
 ]

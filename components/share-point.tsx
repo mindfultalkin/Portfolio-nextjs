@@ -28,7 +28,7 @@ export function SharePoint() {
                                 Microsoft SharePoint | Dynamic and Static Content | Access controlled content
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We built a proof of concept of a Wiki portal for a medical billing company. The company dealt with large amounts of static data combined with dynamic data updates that arrived periodically. . The key highlights are:
+                                A proof of concept of a Wiki portal for a medical billing company. The company dealt with large amounts of static data combined with dynamic data updates that arrived periodically. The key highlights are:
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>General static content accessible to all</li>

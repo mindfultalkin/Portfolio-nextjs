@@ -28,7 +28,7 @@ export function DeliberateDecideData() {
                                 Data-Driven Decision Making
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We authored this article to emphasize how organizations can move beyond collecting data to truly leverage data as strategic decisions tools. It explores how businesses can create data products, implement data-driven decision-making (DDDM), and build a culture where analytics becomes central—not incidental—to daily operations.
+                                This article emphasizes how organizations can move beyond collecting data to truly leverage data as strategic decisions tools. It explores how businesses can create data products, implement data-driven decision-making (DDDM), and build a culture where analytics becomes central—not incidental—to daily operations.
                             </p>
                         </div>
                     </div>

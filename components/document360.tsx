@@ -27,7 +27,7 @@ export function Document360() {
                                 Document360 | 140+ articles | 18 months
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We built a complete self-service portal for the Mediatech company’s two products from the ground up. The key highlights are:
+                                A complete self-service portal for the Mediatech company’s two products from the ground up. The key highlights are:
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>140+ detailed, user-friendly help articles for the first product</li>

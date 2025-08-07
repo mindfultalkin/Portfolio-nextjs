@@ -28,7 +28,7 @@ export function MaypoleDanceManagedDevOps() {
                                 Blog
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this blog to highlight how Managed DevOps transforms software delivery by eliminating toolchain friction and enabling seamless, continuous workflows. Through the Maypole dance metaphor, the article illustrates how DevOps converges development, testing, deployment, and compliance into a coordinated dance—creating faster feedback, better collaboration, and a stronger delivery cadence.
+                                This blog highlights how Managed DevOps transforms software delivery by eliminating toolchain friction and enabling seamless, continuous workflows. Through the Maypole dance metaphor, the article illustrates how DevOps converges development, testing, deployment, and compliance into a coordinated dance—creating faster feedback, better collaboration, and a stronger delivery cadence.
                             </p>
                         </div>
                     </div>

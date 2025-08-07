@@ -28,15 +28,15 @@ export function FlippedClassMicrolearning() {
                                 Flipped Class and Microlearning | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this paper to document how flipped classrooms and microlearning can transform English language proficiency in schoolteachers—especially those working with first-generation English learners. Designed and implemented by Chippersage, the initiative combines technology, relevant content, and mentorship to empower teachers to deliver better English instruction in real classrooms.<br/>The paper shares hands-on learnings from a large-scale deployment (Project TEFD), offering a replicable model for language capacity-building that blends pedagogical depth with flexibility and scale.
+                                This white paper documents how flipped classrooms and microlearning can transform English language proficiency in school teachers—especially those working with first-generation English learners. <br/>The paper shares hands-on learnings from a large-scale deployment (Project TEFD), offering a replicable model for language capacity-building that blends pedagogical depth with flexibility and scale.
                             </p>
-                            <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
+                            {/* <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Many Indian teachers are expected to teach in English but lack fluency, which creates challenges for students and limits learning outcomes.</li>
                                 <li>Combined flipped classroom methods (learn before class) with microlearning (short, focused modules) and 1:1 mentorship.</li>
                                 <li>Rolled out to ~1000 teachers across public and private schools; tracked engagement, mentor interactions, and application.</li>
                                 <li>Significant learning gains, higher use of English in classrooms, improved confidence, and clear preference for hybrid models.</li>
                                 <li>Provides a replicable model for language capacity-building that blends pedagogical depth with flexibility and scale.</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@ export function FlippedClassMicrolearning() {
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
-                                PDF Viewer                                
+                                White Paper                              
                             </CardTitle>
                         </CardHeader>
                         <CardContent>

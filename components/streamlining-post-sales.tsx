@@ -28,11 +28,11 @@ export function StreamliningPostSales() {
                                 Post-Sales Journey | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this framework to help retail and home interior brands streamline the post-sales customer journey—from store interaction to delivery, installation, and warranty support. Often, a lack of visibility, unclear roles, and fragmented communication after the sale lead to delays, dissatisfaction, and operational stress.<br/>This guide lays out a stage-by-stage blueprint to deliver consistency, accountability, and customer delight—supported by measurement protocols, CRM handoffs, and service processes that close the loop.
+                                A framework to help retail and home interior brands streamline the post-sales customer journey—from store interaction to delivery, installation, and warranty support. Often, a lack of visibility, unclear roles, and fragmented communication after the sale lead to delays, dissatisfaction, and operational stress.<br/>This guide lays out a stage-by-stage blueprint to deliver consistency, accountability, and customer delight—supported by measurement protocols, CRM handoffs, and service processes that close the loop.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
-                                <li>Most customer dissatisfaction arises after the sale—due to unclear timelines, poor communication, or post-installation support issues.</li>
-                                <li>Sales teams, measurement engineers, CRM managers, logistics staff, and customer success personnel.</li>
+                                {/* <li>Most customer dissatisfaction arises after the sale—due to unclear timelines, poor communication, or post-installation support issues.</li> */}
+                                <li>Aids sales teams, measurement engineers, CRM managers, logistics staff, and customer success personnel.</li>
                                 <li>Align people, process, and systems across every customer-facing stage after store interaction.</li>
                                 <li>Ensure seamless handoffs, clear roles, and accountability at every step—from measurement to delivery to post-installation support.</li>
                                 <li>Deliver a consistent, high-quality experience that builds trust and loyalty.</li>                                

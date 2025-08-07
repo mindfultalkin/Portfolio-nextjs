@@ -28,9 +28,9 @@ export function ElpisEmpoweringMSMEs() {
                                 Elpis Smart Manufacturing | 50+ articles | 8 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We wrote this piece to spotlight how the Elpis Smart Manufacturing Platform helps India's MSMEs (Micro, Small, and Medium Enterprises) transition into the world of Industry 4.0—without the high costs or complexity typically associated with digital transformation.<br/>In an environment where outdated machinery, scattered data, and rising operational costs threaten growth, Elpis delivers plug-and-play smart solutions that empower MSMEs to digitize, monitor, and optimize their manufacturing processes efficiently.
+                                This blog spotlights how the IOT company's Smart Manufacturing Platform helps India's MSMEs (Micro, Small, and Medium Enterprises) transition into the world of Industry 4.0—without the high costs or complexity typically associated with digital transformation.<br/>In an environment where outdated machinery, scattered data, and rising operational costs threaten growth, Elpis delivers plug-and-play smart solutions that empower MSMEs to digitize, monitor, and optimize their manufacturing processes efficiently.
                             </p>
-                            <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
+                            {/* <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Legacy machines that don’t communicate</li>
                                 <li>Disconnected data systems</li>
                                 <li>High energy costs and frequent equipment failures</li>
@@ -38,7 +38,7 @@ export function ElpisEmpoweringMSMEs() {
                                 <li>Real-time dashboards to track energy, production, and performance</li>
                                 <li>AI-driven insights to optimize operations and reduce costs</li>
                                 <li>Scalable solutions that grow with the business</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@ export function ElpisEmpoweringMSMEs() {
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
-                                Workflow Steps
+                                Blog
                             </CardTitle>
                         </CardHeader>
                         <CardContent>

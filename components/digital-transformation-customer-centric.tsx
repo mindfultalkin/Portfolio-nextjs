@@ -28,9 +28,9 @@ export function DigitalTransformationCustomerCentric() {
                                 Digital Transformation | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this article to help organizations reframe digital transformation not just as a tech upgrade, but as a customer-first strategy. In today’s highly personalized, digital-first world, simply digitizing existing processes isn’t enough—brands must reimagine experiences that make customers feel seen, understood, and valued at every touchpoint.<br/>Using real-world examples and Lindsay Herbert’s BUILD framework, this piece serves as a guide for companies looking to design transformation efforts that drive long-term customer loyalty and market relevance.
+                                This article helps organizations reframe digital transformation not just as a tech upgrade, but as a customer-first strategy. In today’s highly personalized, digital-first world, simply digitizing existing processes isn’t enough—brands must reimagine experiences that make customers feel seen, understood, and valued at every touchpoint.<br/>Using real-world examples and Lindsay Herbert’s BUILD framework, this piece serves as a guide for companies looking to design transformation efforts that drive long-term customer loyalty and market relevance.
                             </p>
-                            <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
+                            {/* <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>71% of customers expect personalization</li>
                                 <li>76% get frustrated when it’s missing</li>
                                 <li>Customer experience drives retention and buying behavior</li>
@@ -38,7 +38,7 @@ export function DigitalTransformationCustomerCentric() {
                                 <li>Customer-centric transformation leads to higher satisfaction, loyalty, and revenue</li>
                                 <li>Brands must understand customer needs, behaviors, and pain points</li>
                                 <li>Successful examples include Nike, Starbucks, and Domino’s</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
 

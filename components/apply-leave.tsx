@@ -29,11 +29,11 @@ export function ApplyLeave() {
                                 leave application process | Video
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this short, user-friendly video to walk employees through the leave application process within our HR or internal system. Designed for both new joiners and existing staff, this video ensures a clear understanding of how to check balances, apply for leave, and track approvals—eliminating confusion and improving turnaround time.<br/>The goal is to simplify self-service HR tasks, reduce dependency on manual follow-ups, and ensure policy compliance.
+                                A short, user-friendly video to walk employees through the leave application process in the HR system. Designed for both new joiners and existing staff, this video ensures a clear understanding of how to check balances, apply for leave, and track approvals—eliminating confusion and improving turnaround time.<br/>The goal is to simplify self-service HR tasks, reduce dependency on manual follow-ups, and ensure policy compliance.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Help employees apply for leave accurately and efficiently without HR intervention.</li>
-                                <li>All employees—especially new joiners or remote staff unfamiliar with the system.</li>
+                                {/* <li>All employees—especially new joiners or remote staff unfamiliar with the system.</li> */}
                                 <li>Step-by-step screencast with optional narration or captions.</li>
                                 <li>Users can independently navigate the leave application process, reducing errors and delays.</li>
                                 <li>Improves employee satisfaction by making HR processes transparent and easy to follow.</li>

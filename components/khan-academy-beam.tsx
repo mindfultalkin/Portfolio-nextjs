@@ -28,12 +28,12 @@ export function KhanAcademyBeam() {
                                 Khan Academy Project BEAM | 60+ articles | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this documentation to showcase Project BEAM, a scalable microlearning initiative by Khan Academy India, designed to uplift blue-collar workers through basic English and Math literacy. Delivered entirely over WhatsApp, the project aims to provide flexible, bite-sized learning to individuals who may not have completed formal schooling—empowering them with skills that have real-world utility in workplaces.<br/>In collaboration with partners like Chippersage and Gupshup.io, this project represents a powerful convergence of edtech, content design, and accessible delivery infrastructure to build learning habits where traditional education systems may not reach.
+                                This concept note showcases Project BEAM, a scalable microlearning initiative by Khan Academy India, designed to uplift blue-collar workers through basic English and Math literacy. Delivered entirely over WhatsApp, the project aims to provide flexible, bite-sized learning to individuals who may not have completed formal schooling—empowering them with skills that have real-world utility in workplaces.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
-                                <li>Upskill blue-collar workers in basic Math and English to support career growth and confidence.</li>
-                                <li>Individuals without Class 10 completion, mostly Gen Z, employed across logistics, delivery, retail, etc.</li>
-                                <li>Deployed across 4 corporates with 3,000+ learners onboarded in under 5 months.</li>
+                                {/* <li>Upskill blue-collar workers in basic Math and English to support career growth and confidence.</li> */}
+                                {/* <li>Individuals without Class 10 completion, mostly Gen Z, employed across logistics, delivery, retail, etc.</li> */}
+                                {/* <li>Deployed across 4 corporates with 3,000+ learners onboarded in under 5 months.</li> */}
                                 <li>Delivered via WhatsApp, leveraging microlearning principles for flexible, bite-sized content.</li>
                                 <li>Content designed to be relevant, practical, and immediately applicable in real-world scenarios.</li>
                                 <li>Focus on building learning habits and confidence through accessible, engaging delivery.</li>
@@ -107,7 +107,7 @@ export function KhanAcademyBeam() {
 
                         <CardHeader>
                             <CardTitle className="text-2xl text-[#0894b5]">
-                                Documentation Workflow Steps
+                                Concept Note
                             </CardTitle>
                         </CardHeader>
                         <CardContent>

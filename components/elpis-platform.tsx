@@ -28,16 +28,16 @@ export function ElpisPlatform() {
                                 A Modular, Scalable Solution for Industry 4.0 Adoption
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this document to present the Elpis Smart Manufacturing Platform — a modular, scalable solution designed to help MSMEs adopt Industry 4.0 technologies effectively. The platform addresses key manufacturing challenges such as equipment downtime, data silos, and operational inefficiencies by enabling real-time monitoring, predictive analytics, and seamless digital integration of legacy systems.<br />This guide provides an enterprise-wide view of how Indian manufacturers can modernize in a phased, cost-effective way—boosting OEE, reducing maintenance costs, and improving decision-making without the need for complete equipment overhauls.
+                                This document presents the IOT company's Smart Manufacturing Platform — a modular, scalable solution designed to help MSMEs adopt Industry 4.0 technologies effectively. The platform addresses key manufacturing challenges such as equipment downtime, data silos, and operational inefficiencies by enabling real-time monitoring, predictive analytics, and seamless digital integration of legacy systems.<br />This guide provides an enterprise-wide view of how Indian manufacturers can modernize in a phased, cost-effective way—boosting OEE, reducing maintenance costs, and improving decision-making without the need for complete equipment overhauls.
                             </p>
-                            <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
+                            {/* <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Enable MSMEs to transition from proof-of-concepts (PoCs) to fully integrated smart factories.</li>
                                 <li>Mid-sized manufacturers (50-100 machines), operations teams, plant heads, decision-makers.</li>
                                 <li>IoT-powered E-REMOS platform + ready-to-deploy IIoT devices + predictive analytics.</li>
                                 <li>Modular, scalable solution for Industry 4.0 adoption.</li>
                                 <li>Real-time monitoring, predictive analytics, and digital integration of legacy systems.</li>
                                 <li>Phased, cost-effective modernization to boost OEE, reduce maintenance costs, and improve decision-making.</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
 

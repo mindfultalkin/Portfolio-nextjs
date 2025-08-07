@@ -29,11 +29,11 @@ export function CompensatoryOff() {
                                 Apply for a Comp-Off | Video
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this instructional video to help employees understand how to apply for a Compensatory Off (Comp-Off) in our internal HR system. Whether someone has worked extra hours on a weekend, holiday, or beyond regular shift timings, this video guides them step-by-step on how to record and claim their compensatory leave transparently.<br/>This video supports smoother HR operations, reduces errors in leave tracking, and ensures fairness in time-off management.
+                                An instructional video to help employees understand how to apply for a Compensatory Off (Comp-Off) in the HR system. Whether someone has worked extra hours on a weekend, holiday, or beyond regular shift timings, this video guides them step-by-step on how to record and claim their compensatory leave transparently.<br/>This video supports smoother HR operations, reduces errors in leave tracking, and ensures fairness in time-off management.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Help employees apply for comp-off correctly and track it through approval stages.</li>
-                                <li>Employees who work overtime or during holidays and need to claim time-off compensation</li>
+                                {/* <li>Employees who work overtime or during holidays and need to claim time-off compensation</li> */}
                                 <li>Employees confidently apply for comp-off, and HR teams receive structured, verifiable requests.</li>
                                 <li>Reduces confusion and errors in leave management, ensuring fair treatment for all employees.</li>
                                 <li>Improves overall employee satisfaction by providing clear, actionable guidance on leave policies.</li>

@@ -22,20 +22,20 @@ export function TrainingNeedsBethliving() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Bethliving - Training Needs Analysis
+                                Training Needs Analysis
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
                                 Training Needs Analysis | 44 Outlets | 12 weeks
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
-                                We created this report to assess and address the training needs of Bethliving’s customer-facing teams across their 44 retail outlets in India. As Bethliving expands under COCO, FICO, and FOFO formats, the leadership recognized the need to deliver consistent, confident, and brand-aligned communication at every store.<br/>This report documents our Phase 1 exploratory findings—based on interviews, mystery shopping, and in-store assessments—and proposes a structured roadmap for skill-building across product knowledge, process adherence, and soft skills.
+                                This report assesses and addresses the training needs of the kitchen cabinet manufacturing company's customer-facing teams across their 44 retail outlets in India. As the company expands under COCO, FICO, and FOFO formats, the leadership recognized the need to deliver consistent, confident, and brand-aligned communication at every store.<br/>This report documents our Phase 1 exploratory findings—based on interviews, mystery shopping, and in-store assessments—and proposes a structured roadmap for skill-building across product knowledge, process adherence, and soft skills.
                             </p>
                             <ul className="text-[#666666] list-disc list-inside text-left mx-auto">
                                 <li>Identify gaps in product understanding, customer handling, and process consistency.</li>
                                 <li>Field visits, phone audits, leadership interviews, and persona mapping.</li>
-                                <li>Strong belief in the product and CRM consistency was observed.</li>
+                                {/* <li>Strong belief in the product and CRM consistency was observed.</li> */}
                                 <li>Gaps existed in uniform product explanation, brochure use, objection handling, and customer engagement.</li>
-                                <li>Store In-Charge, Sales Manager, BDE, and Installation Technicians – all of whom need tailored training.</li>
+                                {/* <li>Store In-Charge, Sales Manager, BDE, and Installation Technicians – all of whom need tailored training.</li> */}
                                 <li>Proposed training modules on product knowledge, process adherence, and soft skills.</li>
                                 <li>Focus on building confidence, consistency, and brand alignment across all customer interactions.</li>
                             </ul>
