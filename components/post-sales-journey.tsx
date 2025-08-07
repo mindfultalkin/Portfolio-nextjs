@@ -22,10 +22,10 @@ export function PostSalesJourney() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Bethliving Objection Handling Guide
+                                Objection Handling Guide
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Objection Handling Guide | 60+ articles | 12 weeks
+                                Objection Handling Guide | Hospitality Industry
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 We created this guide to help Bethliving’s showroom and field teams confidently respond to common customer objections around steel kitchens. In many households, customers are still influenced by wood as the “default” material—and this document helps your team shift those beliefs with logic, empathy, and storytelling.<br/>By combining product knowledge with real-life analogies and modular benefits, this guide empowers teams to turn resistance into curiosity—and eventually, into commitment.

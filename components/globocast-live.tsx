@@ -25,7 +25,7 @@ export function GlobocastLive() {
                                 GloboCast Live User Manual
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                GloboCast Live | 10+ User Manual | 12 weeks
+                                Mediatech | 60+ Usecases | 10 Months
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This user manual guides operators, broadcasters, and live event managers to effectively use GloboCast Live and GloboCast Fluid — our powerful cloud-based platforms for live channel orchestration and OTT event streaming.<br/>These tools enable users to manage scheduled and unscheduled live events with flexibility, ensuring smooth transitions, real-time updates, and broadcast-grade controls — all from a remote interface. <br/>Whether you're streaming a news bulletin, a sports tournament, or a product launch, this document helps you navigate the platform and deliver a seamless viewer experience.

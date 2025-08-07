@@ -25,7 +25,7 @@ export function Bethliving9USPS() {
                                 Company's USPs Handbook
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Company's USPs Handbook | 60+ articles | 12 weeks
+                                Company's USPs Handbook | Steel Kitchens Manufacturing
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This guide helps the sales, service, and retail teams to confidently communicate the top 9 USPs of steel furniture products.This guide dives deep into what each USP means, how it benefits the customer, and what misconceptions to proactively address.<br/>These talking points are designed to simplify technical specs into customer-friendly language that drives trust, clarity, and conversion.

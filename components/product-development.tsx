@@ -25,7 +25,7 @@ export function ProductDevelopment() {
                                 Product Development
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Innoventes | 10+ articles | 12 weeks
+                                Thought Paper | Product Management | Agile Development
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This document outlines a structured, stage-by-stage approach to taking a product from idea to launch. It provides a framework for validating ideas, gathering customer insights, planning development, and iterating based on feedback—ultimately helping teams align business, user, and technical goals for successful product delivery.

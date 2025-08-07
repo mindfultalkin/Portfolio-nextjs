@@ -25,7 +25,7 @@ export function BethlivingObjectionHandling() {
                                 Objection Handling Guide
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Objection Handling Guide | 60+ articles | 12 weeks
+                                Objection Handling Guide | Steel Kitchens Manufacturing
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This guide helps a kitchen showroom and field sales teams confidently respond to common customer objections around steel kitchens. In many households, customers are still influenced by wood as the “default” material—and this document helps your team shift those beliefs with logic, empathy, and storytelling.<br/>By combining product knowledge with real-life analogies and modular benefits, this guide empowers teams to turn resistance into curiosity—and eventually, into commitment.

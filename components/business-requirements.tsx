@@ -25,7 +25,7 @@ export function BusinessRequirements() {
                 Business Requirement Document (BRD)
               </h1>
               <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                SaaSmile | 60+ articles | 12 weeks
+                BRD | Supply Chain and Logistics Industry
               </Badge>
               <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                 This document outlines the <b>business and technical requirements</b> for building the SaaSmile shipping plugin for Magento 2. The plugin enables merchants to manage shipments, generate AWBs, and track deliveries directly within their eCommerce platform. Designed for use by SaaSmile Admins, Carrier Admins, and Merchant Users, the plugin supports integration with multiple logistics carriers. <br/>This document serves as a foundational guide for consistent, scalable plugin development across partners and platforms.

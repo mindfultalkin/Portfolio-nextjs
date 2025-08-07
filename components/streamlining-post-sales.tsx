@@ -25,7 +25,7 @@ export function StreamliningPostSales() {
                                 Streamlining the Customer Journey: From Sales to Measurement to Delivery and Beyond
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Post-Sales Journey | 60+ articles | 12 weeks
+                                Hospitality Industry | SOP | Post-Sales Journey
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 A framework to help retail and home interior brands streamline the post-sales customer journey—from store interaction to delivery, installation, and warranty support. Often, a lack of visibility, unclear roles, and fragmented communication after the sale lead to delays, dissatisfaction, and operational stress.<br/>This guide lays out a stage-by-stage blueprint to deliver consistency, accountability, and customer delight—supported by measurement protocols, CRM handoffs, and service processes that close the loop.

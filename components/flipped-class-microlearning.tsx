@@ -25,7 +25,7 @@ export function FlippedClassMicrolearning() {
                                 Flipped Class and Microlearning for Language Development – A Practitioner’s Experience
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Flipped Class and Microlearning | 60+ articles | 12 weeks
+                                White Paper | Microlearning | Education
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This white paper documents how flipped classrooms and microlearning can transform English language proficiency in school teachers—especially those working with first-generation English learners. <br/>The paper shares hands-on learnings from a large-scale deployment (Project TEFD), offering a replicable model for language capacity-building that blends pedagogical depth with flexibility and scale.

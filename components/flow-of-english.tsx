@@ -25,7 +25,7 @@ export function FlowOfEnglish() {
                                 Flow of English
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Learner
+                                Product Tour | Interactive Learning | Education
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 A structured guide to showcase Flow of English – Learner, a dynamic, interactive learning solution designed for children aged 8–12. Flow of English delivers impactful English language learning using multisensory methods—audio, visual, and tactile—making reading and comprehension engaging and effective.<br/>The digital product tour helps learners navigate the platform and explore new features. This enhances user engagement and product adoption.

@@ -25,7 +25,7 @@ export function DigitalTransformationCustomerCentric() {
                                 Digital Transformation to Make the Customer the King
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Digital Transformation | 60+ articles | 12 weeks
+                                Blog | Digital Transformation
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This article helps organizations reframe digital transformation not just as a tech upgrade, but as a customer-first strategy. In today’s highly personalized, digital-first world, simply digitizing existing processes isn’t enough—brands must reimagine experiences that make customers feel seen, understood, and valued at every touchpoint.<br/>Using real-world examples and Lindsay Herbert’s BUILD framework, this piece serves as a guide for companies looking to design transformation efforts that drive long-term customer loyalty and market relevance.

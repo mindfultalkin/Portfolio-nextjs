@@ -25,8 +25,7 @@ export function ElpisPlatform() {
                                 Elpis Smart Manufacturing Platform
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                A Modular, Scalable Solution for Industry 4.0 Adoption
-                            </Badge>
+                                Industry 4.0 | Product Marketing                            </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This document presents the IOT company's Smart Manufacturing Platform — a modular, scalable solution designed to help MSMEs adopt Industry 4.0 technologies effectively. The platform addresses key manufacturing challenges such as equipment downtime, data silos, and operational inefficiencies by enabling real-time monitoring, predictive analytics, and seamless digital integration of legacy systems.<br />This guide provides an enterprise-wide view of how Indian manufacturers can modernize in a phased, cost-effective way—boosting OEE, reducing maintenance costs, and improving decision-making without the need for complete equipment overhauls.
                             </p>

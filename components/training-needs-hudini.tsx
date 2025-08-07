@@ -25,7 +25,7 @@ export function TrainingNeedsHudini() {
                                 Training Needs Analysis
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Training Needs Analysis | 30+ articles | 8 weeks
+                                Training Needs Analysis | Hospitality Industry
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This report helps a hospitality product and delivery teams consistently meet on-time delivery expectations as the company scales globally. As a fast-growing hospitality tech platform with 100+ integrations, the company faces challenges around process clarity, communication gaps, and limited product knowledge—all of which directly impact delivery timelines and client trust.<br/>This report is based on 1:1 conversations with senior leadership, project managers, developers, and functional heads, and presents a systems-level view of what’s affecting performance, along with clear recommendations for training and process restructuring.

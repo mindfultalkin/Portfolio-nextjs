@@ -25,7 +25,7 @@ export function SystemArchitecture() {
                                 System Architecture
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                SUNDOOR | 10+ articles | 12 weeks
+                                Industry 4.0 | System Architecture
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This document contains the architecture of the SUNDOOR system, developed to control platform screen doors (PSDs) in metro stations. SUNDOOR ensures the safe and automated operation of sliding doors by monitoring motor behavior, detecting obstructions, and coordinating with the central metro controller. <br/>This document details SUNDOOR's components, interfaces, operating modes, safety logic, and diagnostics in alignment with industry standards.

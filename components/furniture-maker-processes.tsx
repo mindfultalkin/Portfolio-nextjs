@@ -25,7 +25,7 @@ export function FurnitureMakerProcesses() {
                                 SOPs for a Furniture Making Company
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                SOP Playbook | 50+ articles | 8 weeks
+                                SOP Playbook | Kitchen Cabinet | Steel Furniture Manufacturing
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 A SOP playbook to help cabinet and closet manufacturers standardize their core workflows—reducing repetitive questions, minimizing dependency on managers, and increasing operational consistency. Rooted in lean manufacturing strategies, the guide empowers your team to work on the business instead of always working in it.

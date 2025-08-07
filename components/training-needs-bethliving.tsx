@@ -25,7 +25,7 @@ export function TrainingNeedsBethliving() {
                                 Training Needs Analysis
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Training Needs Analysis | 44 Outlets | 12 weeks
+                                Training Needs Analysis | Steel Kitchens Manufacturing
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This report assesses and addresses the training needs of the kitchen cabinet manufacturing company's customer-facing teams across their 44 retail outlets in India. As the company expands under COCO, FICO, and FOFO formats, the leadership recognized the need to deliver consistent, confident, and brand-aligned communication at every store.<br/>This report documents our Phase 1 exploratory findings—based on interviews, mystery shopping, and in-store assessments—and proposes a structured roadmap for skill-building across product knowledge, process adherence, and soft skills.

@@ -25,7 +25,7 @@ export function KhanAcademyBeam() {
                                 Project BEAM – Khan Academy
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Khan Academy Project BEAM | 60+ articles | 12 weeks
+                                Concept Note | Khan Academy | Literacy for Blue-Collar Workers
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This concept note showcases Project BEAM, a scalable microlearning initiative by Khan Academy India, designed to uplift blue-collar workers through basic English and Math literacy. Delivered entirely over WhatsApp, the project aims to provide flexible, bite-sized learning to individuals who may not have completed formal schooling—empowering them with skills that have real-world utility in workplaces.

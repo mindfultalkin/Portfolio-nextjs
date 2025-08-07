@@ -25,7 +25,7 @@ export function NavigatingMediaLibrary() {
                                 Media Library in a Mediatech product
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Media Library | Video Management
+                                Mediatech | Product Tutorial | 150 sec
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 An explainer video to help users navigate the Media Library in a mediatech product. This video is designed to guide operators, content managers, and broadcast coordinators in efficiently accessing, managing, and organizing their media assets in the platform.<br/>The Media Library is central to daily workflows, and this tutorial ensures that users can confidently locate, preview, and use the correct assets for live or scheduled playout.

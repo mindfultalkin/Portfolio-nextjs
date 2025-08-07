@@ -26,7 +26,7 @@ export function CompensatoryOff() {
 
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Apply for a Comp-Off | Video
+                                Apply for a Comp-Off | How-to-video | 70 sec
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 An instructional video to help employees understand how to apply for a Compensatory Off (Comp-Off) in the HR system. Whether someone has worked extra hours on a weekend, holiday, or beyond regular shift timings, this video guides them step-by-step on how to record and claim their compensatory leave transparently.<br/>This video supports smoother HR operations, reduces errors in leave tracking, and ensures fairness in time-off management.

@@ -25,7 +25,7 @@ export function TalentAcquisition() {
                                 SOP for Talent Acquisition (TA)
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Talent Acquisition (TA) | 60+ articles | 12 weeks
+                                Software Industry | Talent Acquisition | SOP
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 We created this Standard Operating Procedure (SOP) to define a structured, scalable, and tech-enabled Talent Acquisition (TA) process. Designed for TA team members, this document outlines the complete hiring journey — from intake to onboarding — including continuous sourcing, structured interviews, AI-driven screening, offer negotiation, and candidate engagement.<br/>Our goal is to ensure consistency, efficiency, and strategic alignment in hiring across all teams and hiring partners, while leveraging data, automation, and standardized communication.

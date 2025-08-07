@@ -25,7 +25,7 @@ export function BethlivingSalesSuccess() {
                                 Sales Success Guide
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Sales Success Guide | 60+ articles | 12 weeks
+                                Sales Success Guide | Steel Kitchens Manufacturing
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This guide helps sales teams consistently close deals by building trust, demonstrating product value, and following a structured CRM-driven process. While product knowledge is crucial, success in th sales model comes from understanding the customer, offering design support, and staying involved even after the token payment.<br/>This guide combines soft skills, brand storytelling, and process discipline to help teams convert walk-ins into long-term advocates.

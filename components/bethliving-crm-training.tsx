@@ -25,7 +25,7 @@ export function BethlivingCRMTraining() {
                                 CRM Training Guide   
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                CRM Training Guide | 60+ articles | 12 weeks
+                                CRM Training Guide | Steel Kitchens Manufacturing
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This CRM training guide helps showroom, field, and backend teams build a culture of process visibility, timely follow-up, and customer-first action. This guide aligns sales and service touchpoints to ensure every team member uses the CRM as a single source of truth from enquiry to delivery.<br/>When followed consistently, this approach improves conversion rates, reduces confusion, and strengthens customer confidence across the journey.

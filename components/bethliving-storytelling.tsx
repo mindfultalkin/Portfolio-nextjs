@@ -25,7 +25,7 @@ export function BethlivingStorytelling() {
                                 Storytelling for Sales
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Storytelling Guide | 60+ articles | 12 weeks
+                                Storytelling Guide | Steel Kitchens Manufacturing
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This is a storytelling guide to help showroom and sales staff transform product features into emotional, relatable conversations. Storytelling allows salespeople to shift from pitching products to sharing real-life outcomes—making the customer the hero and the salesperson a trusted guide.<br/>This guide shows how to use past experiences, client examples, and success stories to handle concerns with empathy and influence decisions without pressure.

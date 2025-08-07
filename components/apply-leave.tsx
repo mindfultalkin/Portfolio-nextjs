@@ -22,11 +22,10 @@ export function ApplyLeave() {
                     <div className="text-center space-y-6">
                         <div className="space-y-4">
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0894b5] leading-tight">
-                                Leave Application Process 
-
+                                Leave Application Process
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                leave application process | Video
+                                Leave application process | How-to-video | 100 sec
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 A short, user-friendly video to walk employees through the leave application process in the HR system. Designed for both new joiners and existing staff, this video ensures a clear understanding of how to check balances, apply for leave, and track approvals—eliminating confusion and improving turnaround time.<br/>The goal is to simplify self-service HR tasks, reduce dependency on manual follow-ups, and ensure policy compliance.

@@ -26,7 +26,7 @@ export function ApprovalsAccess() {
 
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                 Accessing Approvals | Video
+                                 Accessing Approvals | How-to-video | 120 sec
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 A quick explainer video to help internal users understand how to access and manage approval workflows within the company’s internal systems. Whether you're requesting access, tracking pending items, or reviewing approvals across departments, this guide ensures a smooth and intuitive user experience with step-by-step visuals.<br />This resource is designed for new employees, team leads, and operations staff who need a refresher or a first-time walkthrough on handling approval requests efficiently.

@@ -26,7 +26,7 @@ export function UpdateSeo() {
 
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Video Tutorial
+                                SEO Metadata | Video Walkthrough | 90 sec
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This is a video walkthrough for content and product teams to update SEO metadata within the Secuvy platform. Optimizing metadata such as titles, descriptions, and keywords helps enhance content discoverability across search engines and internal search systems, driving more meaningful traffic and improved ranking.<br/>This tutorial ensures users can confidently edit, validate, and publish metadata for knowledge base articles, product pages, and other customer-facing documentation.

@@ -25,7 +25,7 @@ export function TemperatureAutomation() {
                                 Automation in Temperature-Controlled Environments
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Temperature Automation | 50+ articles | 10 weeks
+                                Case Study | Industry 4.0 | IoT Automation
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This document showcases a real-world digital transformation journey undertaken by a leading food retailer, in collaboration with in IOT company, to modernize temperature-controlled environments using IoT, automation, and AI.<br/>Our aim was to demonstrate how intelligent systems can not only enhance food safety and operational efficiency, but also scale across industries like pharmaceuticals, healthcare, logistics, and manufacturing. This case study acts as a blueprint for how data-driven automation can redefine refrigeration management with precision, sustainability, and predictability at its core.

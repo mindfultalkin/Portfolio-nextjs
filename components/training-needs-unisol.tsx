@@ -25,7 +25,7 @@ export function TrainingNeedsUnisol() {
                                 Training Needs Report - Unisol
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Training Needs Report | 30+ insights | 8 weeks
+                                Training Needs Report | Telecom Industry
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This training needs report supports the telecom company's transformation into a market-leading solutions partner for fiber optic products and services.<br />This document captures insights from leadership and team discussions, identifying gaps in communication, coordination, product understanding, and sales enablement. The recommendations serve as a roadmap for institutionalizing knowledge, building customer trust, and driving consistent performance across departments.

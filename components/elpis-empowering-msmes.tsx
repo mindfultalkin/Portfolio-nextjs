@@ -25,7 +25,7 @@ export function ElpisEmpoweringMSMEs() {
                                 The Future of Manufacturing: How Elpis is Empowering MSMEs to Go Smart
                             </h1>
                             <Badge variant="outline" className="bg-[#f5f2e8] border-[#0894b5] text-[#0894b5] px-4 py-2">
-                                Elpis Smart Manufacturing | 50+ articles | 8 weeks
+                                Blog | IOT Industry | Smart Manufacturing
                             </Badge>
                             <p className="text-lg sm:text-xl text-[#666666] mx-auto text-left leading-relaxed">
                                 This blog spotlights how the IOT company's Smart Manufacturing Platform helps India's MSMEs (Micro, Small, and Medium Enterprises) transition into the world of Industry 4.0—without the high costs or complexity typically associated with digital transformation.<br/>In an environment where outdated machinery, scattered data, and rising operational costs threaten growth, Elpis delivers plug-and-play smart solutions that empower MSMEs to digitize, monitor, and optimize their manufacturing processes efficiently.
